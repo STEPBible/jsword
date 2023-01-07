@@ -41,8 +41,6 @@ import org.crosswire.jsword.versification.Versification;
  * If ony 1 ID passed in then create ending id from it to enable a single flow through algorithm.
  * Missing chapter or verse of starting id will be set to 0/1. 
  * Missing chapter or verse of ending id will be set to last chapter/verse. 
- * 
- * @author chrisburrell, mjdenham
  */
 public final class OsisParser {
     

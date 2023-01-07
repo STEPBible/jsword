@@ -47,8 +47,6 @@ import org.crosswire.jsword.versification.system.Versifications;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  */
 public class BitwisePassage extends AbstractPassage {
     /**
@@ -355,9 +353,6 @@ public class BitwisePassage extends AbstractPassage {
 
     /**
      * Iterate over the Verses
-     * 
-     * @author Joe Walker
-     * @author DM Smith
      */
     private final class VerseIterator implements Iterator<Key> {
         /**

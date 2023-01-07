@@ -74,14 +74,9 @@ import java.util.Set;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Mark Goodwin [mark at thorubio dot org]
- * @author Joe Walker [joe at eireneh dot com]
- * @author Jacky Cheung
- * @author DM Smith
  */
 
 /**
- * @author DM Smith
  * @see gnu.lgpl.License for license details.<br>
  * The copyright to this program is held by it's authors.
  */

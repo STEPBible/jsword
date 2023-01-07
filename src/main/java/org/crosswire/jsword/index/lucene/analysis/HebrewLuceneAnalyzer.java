@@ -35,7 +35,6 @@ import java.io.Reader;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Sijo Cherian [sijocherian at yahoo dot com]
  */
 public class HebrewLuceneAnalyzer extends AbstractBookAnalyzer {
     public HebrewLuceneAnalyzer() {

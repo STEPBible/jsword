@@ -30,7 +30,6 @@ import java.util.NoSuchElementException;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 /* pkg protected */ class BibleBookList implements Iterable<BibleBook>, Serializable {
     /**

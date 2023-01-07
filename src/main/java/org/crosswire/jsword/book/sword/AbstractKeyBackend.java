@@ -35,7 +35,6 @@ import org.crosswire.jsword.passage.RestrictionType;
  * @param <T> The type of the OpenFileState that this class extends.
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public abstract class AbstractKeyBackend<T extends OpenFileState> extends AbstractBackend<T> implements Key {
     /**

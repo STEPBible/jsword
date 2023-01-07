@@ -6,7 +6,6 @@ package org.crosswire.common.util;
  * @param <T> The type of the object subject to testing.
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public interface Filter<T> {
     /**

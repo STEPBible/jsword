@@ -8,7 +8,6 @@ import org.xml.sax.InputSource;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
  * @see org.crosswire.common.xml.SAXEventProviderXMLReader
  */
 public class SAXEventProviderInputSource extends InputSource {

@@ -38,7 +38,6 @@ import org.slf4j.LoggerFactory;
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
  * @see gnu.lgpl.License
- * @author DM Smith [ dmsmith555 at yahoo dot com]
  */
 public final class ConfigEntry {
 

@@ -31,7 +31,6 @@ import org.crosswire.jsword.index.search.SearchRequest;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public interface Bookmark extends Serializable, Cloneable {
     /**

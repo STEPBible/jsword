@@ -48,8 +48,6 @@ import org.slf4j.LoggerFactory;
 /**
  * This represents all of the Sword Books (aka modules).
  *
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  * @see gnu.lgpl.License for license details.<br>
  * The copyright to this program is held by it's authors.
  */

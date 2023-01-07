@@ -35,7 +35,6 @@ import org.slf4j.LoggerFactory;
  * using ICU4J if present, otherwise from core Java. Note, only those methods in
  * DateFormat that are actually used are here.
  *
- * @author DM Smith
  * @see gnu.lgpl.License for license details.<br>
  * The copyright to this program is held by it's authors.
  */

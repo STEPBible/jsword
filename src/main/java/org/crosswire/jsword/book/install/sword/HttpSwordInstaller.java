@@ -16,9 +16,6 @@ import org.crosswire.jsword.book.install.InstallException;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Mark Goodwin [goodwinster at gmail dot com]
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  */
 public class HttpSwordInstaller extends AbstractSwordInstaller {
 

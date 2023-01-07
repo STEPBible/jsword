@@ -36,7 +36,6 @@ import java.util.regex.Pattern;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public class PatchEntry implements Iterable<Difference> {
     // Constructor for a patch object.

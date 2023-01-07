@@ -14,7 +14,6 @@ import java.util.NoSuchElementException;
  * @param <E> The type of the elements returned by this iterator
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
  */
 public final class IteratorEnumeration<E> implements Enumeration<E> {
     /**

@@ -47,8 +47,6 @@ import org.slf4j.LoggerFactory;
  * A generic way to read data from disk for later formatting.
  *
  * @param <T> The type of the OpenFileState that this class extends.
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
  */

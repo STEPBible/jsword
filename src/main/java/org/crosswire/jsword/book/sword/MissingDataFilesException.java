@@ -27,7 +27,6 @@ import org.crosswire.jsword.book.BookException;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Chris Burrell
  */
 public class MissingDataFilesException extends BookException {
     /**

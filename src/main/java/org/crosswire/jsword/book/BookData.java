@@ -54,8 +54,6 @@ import org.jdom2.Text;
  * That does not mean that each has to have content for each key. Missing keys
  * are represented by empty cells.
  *
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
  */

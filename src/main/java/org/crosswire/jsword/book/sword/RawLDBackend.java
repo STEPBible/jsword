@@ -29,8 +29,6 @@ import org.crosswire.jsword.passage.Key;
  * @param <T> The type of the RawLDBackendState that this class extends.
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  */
 public class RawLDBackend<T extends RawLDBackendState> extends AbstractKeyBackend<RawLDBackendState> {
     /**

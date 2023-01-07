@@ -37,7 +37,6 @@ import org.junit.Test;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author chrisburrell
  */
 public class VersificationToKJVMapperTest {
     private final FileVersificationMapping properties = new FileVersificationMapping();

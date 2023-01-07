@@ -39,7 +39,6 @@ import org.crosswire.jsword.passage.VerseRange;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public class Versification implements ReferenceSystem, Serializable {
     public Versification() {

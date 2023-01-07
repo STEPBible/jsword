@@ -98,7 +98,6 @@ import org.slf4j.LoggerFactory;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
  */
 public class PassageTally extends AbstractPassage {
     /**
@@ -832,7 +831,6 @@ public class PassageTally extends AbstractPassage {
     /**
      * Iterate over the Verses in normal verse order
      * 
-     * @author Joe Walker
      */
     private final class VerseIterator implements Iterator<Key> {
         /**
@@ -886,7 +884,6 @@ public class PassageTally extends AbstractPassage {
     /**
      * Iterate over the Verses in order of their rank in the tally
      * 
-     * @author Joe Walker
      */
     private static final class OrderedVerseIterator implements Iterator<Key> {
         /**
@@ -1026,7 +1023,6 @@ public class PassageTally extends AbstractPassage {
     /**
      * Iterate over the Ranges in order of their rank in the tally
      * 
-     * @author Joe Walker
      */
     private static final class OrderedVerseRangeIterator<T> implements Iterator<VerseRange> {
         /**

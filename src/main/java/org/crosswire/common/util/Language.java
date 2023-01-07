@@ -33,7 +33,6 @@ import java.util.Locale;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public class Language implements Comparable<Language> {
     /**

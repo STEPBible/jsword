@@ -15,7 +15,6 @@ import org.crosswire.common.util.Filter;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public class BookSet extends ArrayList<Book> implements Set<Book> {
     public BookSet() {

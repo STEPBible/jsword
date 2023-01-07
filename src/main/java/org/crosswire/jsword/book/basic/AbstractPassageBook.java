@@ -61,7 +61,6 @@ import org.slf4j.LoggerFactory;
  * An abstract implementation of Book that lets implementors just concentrate on
  * reading book data.
  *
- * @author Joe Walker [joe at eireneh dot com]
  * @see gnu.lgpl.License for license details.<br>
  * The copyright to this program is held by it's authors.
  */

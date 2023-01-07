@@ -17,8 +17,6 @@ import org.crosswire.jsword.internationalisation.LocaleProviderManager;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
- * @author DM Smith
  */
 public final class BibleNames {
     /**
@@ -186,7 +184,6 @@ public final class BibleNames {
      *
      * @see gnu.lgpl.License for license details.<br>
      *      The copyright to this program is held by it's authors.
-     * @author DM Smith [dmsmith555 at yahoo dot com]
      */
     private class NameList {
         /**

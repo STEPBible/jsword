@@ -37,7 +37,6 @@ import org.junit.runners.Parameterized;
 /**
  * JUnit Test
  *
- * @author chrisburrell
  * @see gnu.lgpl.License for license details.<br>
  * The copyright to this program is held by it's authors.
  */

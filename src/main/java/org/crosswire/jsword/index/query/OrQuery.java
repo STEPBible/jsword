@@ -32,7 +32,6 @@ import org.crosswire.jsword.passage.PassageTally;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith [ dmsmith555 at yahoo dot com]
  */
 public class OrQuery extends AbstractBinaryQuery {
 

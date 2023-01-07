@@ -2,7 +2,6 @@ package org.crosswire.common.util;
 
 /**
  * Encapsulates the key and value together.
- * @author chrisburrell
  */
 public class KeyValuePair {
     private String key;

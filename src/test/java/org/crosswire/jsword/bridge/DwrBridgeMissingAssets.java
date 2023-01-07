@@ -38,7 +38,6 @@ import org.junit.Test;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 // TODO: make this test use mocks or setup its own environment
 public class DwrBridgeMissingAssets {

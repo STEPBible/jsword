@@ -38,7 +38,6 @@ import java.util.List;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author chrisburrell
  */
 public class FileVersificationMapping {
     //unsure what a typical value would be, so leaving at 16 - best to optimize for memory,

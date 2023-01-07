@@ -40,7 +40,6 @@ import org.xml.sax.ext.LexicalHandler;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author DM Smith
  */
 public class XMLHandlerAdapter implements EntityResolver, DTDHandler, ContentHandler, ErrorHandler, DeclHandler, LexicalHandler {
     /** Default constructor. */

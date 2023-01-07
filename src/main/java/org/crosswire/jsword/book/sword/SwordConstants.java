@@ -5,10 +5,6 @@ package org.crosswire.jsword.book.sword;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Mark Goodwin [mark at thorubio dot org]
- * @author Joe Walker [joe at eireneh dot com]
- * @author The Sword project (don't know who - no credits in original files
- *         (canon.h))
  */
 public final class SwordConstants {
     /**

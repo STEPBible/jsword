@@ -36,7 +36,6 @@ import static org.junit.Assert.assertEquals;
  *
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author chrisburrell
  */
 public class VersificationsMapperTest {
     private static final Versification KJV = Versifications.instance().getVersification(SystemKJV.V11N_NAME);

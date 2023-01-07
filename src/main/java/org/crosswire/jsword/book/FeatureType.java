@@ -7,7 +7,6 @@ package org.crosswire.jsword.book;
  * 
  * @see gnu.lgpl.License for license details.<br>
  *      The copyright to this program is held by it's authors.
- * @author Joe Walker [joe at eireneh dot com]
  */
 public enum FeatureType {
     /**
