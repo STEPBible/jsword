@@ -29,6 +29,7 @@ package org.crosswire.jsword.passage;
  */
 public class PassageTallyTest extends PassageParentTst {
     public PassageTallyTest() {
-        super(PassageType.TALLY, false);
+        super();
+        this.init(PassageType.TALLY, false);
     }
 }

@@ -29,6 +29,7 @@ package org.crosswire.jsword.passage;
  */
 public class PassageSpeedTest extends PassageParentTst {
     public PassageSpeedTest() {
-        super(PassageType.SPEED, false);
+        super();
+        this.init(PassageType.SPEED, false);
     }
 }

@@ -29,6 +29,7 @@ package org.crosswire.jsword.passage;
  */
 public class PassageSizeTest extends PassageParentTst {
     public PassageSizeTest() {
-        super(PassageType.SIZE, false);
+        super();
+        this.init(PassageType.SIZE, false);
     }
 }

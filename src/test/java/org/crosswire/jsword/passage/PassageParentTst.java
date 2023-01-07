@@ -20,18 +20,6 @@
  */
 package org.crosswire.jsword.passage;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.Iterator;
-
 import org.crosswire.jsword.book.CaseType;
 import org.crosswire.jsword.versification.BibleBook;
 import org.crosswire.jsword.versification.BookName;
@@ -41,6 +29,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.io.*;
+import java.util.Iterator;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * This would be called TestPassage however then people might think it was a
@@ -55,7 +49,7 @@ public class PassageParentTst {
     public PassageParentTst() {
     }
 
-    public PassageParentTst(PassageType ptype, boolean optimize) {
+    public void init(PassageType ptype, boolean optimize) {
         PassageKeyFactory.setDefaultPassage(PassageType.toInteger(ptype));
         this.optimize = optimize;
     }

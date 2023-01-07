@@ -29,6 +29,7 @@ package org.crosswire.jsword.passage;
  */
 public class PassageMixTest extends PassageParentTst {
     public PassageMixTest() {
-        super(PassageType.MIX, false);
+        super();
+        this.init(PassageType.MIX, false);
     }
 }
