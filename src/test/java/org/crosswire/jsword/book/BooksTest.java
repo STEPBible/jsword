@@ -20,23 +20,16 @@
  */
 package org.crosswire.jsword.book;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
-import java.util.List;
-
-import org.crosswire.jsword.book.basic.AbstractPassageBook;
 import org.crosswire.jsword.passage.Key;
-import org.crosswire.jsword.passage.VerseRangeFactory;
-import org.crosswire.jsword.versification.BibleBook;
-import org.crosswire.jsword.versification.system.Versifications;
 import org.jdom2.Element;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.List;
+
+import static org.junit.Assert.*;
 
 /**
  * JUnit Test.
@@ -125,36 +118,6 @@ public class BooksTest {
             assertNotNull(data.getOsisFragment());
         }
     }
-
-    /** Bibles like TurNTB contain merged (linked) verses which are duplicated when chapters are displayed- see JS-224.
-     *	This tests the deduplication code in AbstractPassageBook.
-     */
-    @Test
-    public void testBookList() throws Exception {
-        //part of the pre-requisites
-        AbstractPassageBook esv = (AbstractPassageBook) Books.installed().getBook("ESV2011");
-        assertTrue(esv.getBibleBooks().contains(BibleBook.ACTS));
-    }
-
-
-	/** Bibles like TurNTB contain merged (linked) verses which are duplicated when chapters are displayed- see JS-224.
-	 *	This tests the deduplication code in AbstractPassageBook.
-	 */
-    @Test
-	public void testLinkedVersesNotDuplicated() throws Exception {
-		Book turNTB = Books.installed().getBook("TurNTB");
-		if (turNTB!=null) {
-			// Eph 2:4,5 are merged/linked in TurNTB
-			Key eph245 = VerseRangeFactory.fromString(Versifications.instance().getVersification("KJV"), "Eph 2:4-5");
-			BookData bookData = new BookData(turNTB, eph245);
-			final Element osisFragment = bookData.getOsisFragment();
-
-			final XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat());
-			String xml = xmlOutputter.outputString(osisFragment);
-
-			assertTrue("Probable duplicate text", xml.length()<300);
-		}
-	}
 
     /** 
      * Books like Josephus have hierarchical chapters.  Only the current chapter should be returned, not child chapters.

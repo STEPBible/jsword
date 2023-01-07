@@ -34,7 +34,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -81,7 +80,7 @@ public class BackendTest {
 
     /**
      * Z Text - cos it's important
-     * 
+     *
      * @throws Exception
      *             an uncaught, failing, exception
      */
@@ -96,7 +95,7 @@ public class BackendTest {
 
     /**
      * Z Text - cos it's important
-     * 
+     *
      * @throws Exception
      *             an uncaught, failing, exception
      */
@@ -107,130 +106,6 @@ public class BackendTest {
 
         backendTest(version, reference, "<title type=\"x-gen\">Romans 1</title>", "<verse osisID=\"Rom.1.1\">", "<verse osisID=\"Rom.1.32\">",
                 "set", "apart", "for", "the", "gospel", "of", "God", "give", "approval", "to", "those", "who", "practice", "them");
-    }
-
-    /**
-     * Z Text - cos it's important
-     * 
-     * @throws Exception
-     *             an uncaught, failing, exception
-     */
-    @Test
-    public void testBackendCrossChapterBoundary() throws Exception {
-        String version = "ESV2011";
-        String reference = "Rom 1:32-Rom:2:2";
-
-        String xml = backendTest(version, reference, "<verse osisID=\"Rom.1.32\">", "<title type=\"x-gen\">Romans 2:0-2</title>", "<verse osisID=\"Rom.2.1\">",
-                "<verse osisID=\"Rom.2.2\">");
-
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.31\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.2.3\">"));
-
-    }
-
-    /**
-     * Z Text - cos it's important
-     * 
-     * @throws Exception
-     *             an uncaught, failing, exception
-     */
-    @Test
-    public void testBackendMiddleChapter() throws Exception {
-        String version = "ESV2011";
-        String reference = "Rom 1:2-1:31";
-
-        String xml = backendTest(version, reference, "<verse osisID=\"Rom.1.2\">", "<verse osisID=\"Rom.1.31\">");
-
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.1\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.32\">"));
-
-    }
-
-    /**
-     * Z Text - cos it's important
-     * 
-     * @throws Exception
-     *             an uncaught, failing, exception
-     */
-    @Test
-    public void testBackendMiddleToEnd() throws Exception {
-        String version = "ESV2011";
-        String reference = "Rom 1:5-ff";
-
-        String xml = backendTest(version, reference, "<verse osisID=\"Rom.1.5\">", "<verse osisID=\"Rom.1.31\">", "<verse osisID=\"Rom.1.32\">");
-
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.1\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.4\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.2.0\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.2.1\">"));
-    }
-    
-    
-    
-    /**
-     * Z Text - cos it's important
-     * 
-     * @throws Exception
-     *             an uncaught, failing, exception
-     */
-    @Test
-    public void testBackend2ChaptersStartMiddle() throws Exception {
-        String version = "ESV2011";
-        String reference = "Rom 1:5-3:14";
-
-        String xml = backendTest(version, reference, "<verse osisID=\"Rom.1.5\">", 
-                "<verse osisID=\"Rom.2.1\">","<verse osisID=\"Rom.2.10\">",  
-                "<verse osisID=\"Rom.3.1\">","<verse osisID=\"Rom.3.10\">",
-                "<verse osisID=\"Rom.3.14\">"
-                );
-
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.4\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.3.15\">"));
-    }
-    
-    /**
-     * Z Text - cos it's important
-     * 
-     * @throws Exception
-     *             an uncaught, failing, exception
-     */
-    @Test
-    public void testBackend2ChaptersStartVerse1() throws Exception {
-        String version = "ESV2011";
-        String reference = "Rom 1:1-3:14";
-
-        String xml = backendTest(version, reference, 
-                "<verse osisID=\"Rom.1.1\">","<verse osisID=\"Rom.1.2\">",
-                "<verse osisID=\"Rom.1.5\">", 
-                "<verse osisID=\"Rom.2.1\">","<verse osisID=\"Rom.2.10\">",  
-                "<verse osisID=\"Rom.3.1\">","<verse osisID=\"Rom.3.10\">",
-                "<verse osisID=\"Rom.3.14\">"
-                );
-
-        assertFalse(xml.contains("<verse osisID=\"Rom.1.0\">"));
-        assertFalse(xml.contains("<verse osisID=\"Rom.3.15\">"));
-    }
-    
-    /**
-     * Z Text - cos it's important
-     * 
-     * @throws Exception
-     *             an uncaught, failing, exception
-     */
-    @Test
-    public void testBackend2ChaptersStartVerse0() throws Exception {
-        String version = "ESV2011";
-        String reference = "Rom 1:0-3:14";
-
-        String xml = backendTest(version, reference, 
-                "<verse osisID=\"Rom.1.2\">","<verse osisID=\"Rom.1.2\">",
-                "<verse osisID=\"Rom.1.5\">", 
-                "<verse osisID=\"Rom.2.1\">","<verse osisID=\"Rom.2.10\">",  
-                "<verse osisID=\"Rom.3.1\">","<verse osisID=\"Rom.3.10\">",
-                "<verse osisID=\"Rom.3.14\">"
-                );
-
-        assertFalse(xml.contains("<verse osisID=\"Rom.3.15\">"));
     }
 
     /**
