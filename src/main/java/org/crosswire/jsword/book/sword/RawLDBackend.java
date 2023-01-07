@@ -27,8 +27,6 @@ import org.crosswire.jsword.passage.Key;
  * An implementation AbstractKeyBackend to read RAW format files.
  * 
  * @param <T> The type of the RawLDBackendState that this class extends.
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class RawLDBackend<T extends RawLDBackendState> extends AbstractKeyBackend<RawLDBackendState> {
     /**

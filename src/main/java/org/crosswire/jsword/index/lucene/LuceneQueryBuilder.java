@@ -39,9 +39,6 @@ import org.crosswire.jsword.index.query.RangeQuery;
  * stand at the beginning of the query and may be surrounded by whitespace. The
  * blur specifier is either ~ or ~n, where ~ means adjacent verses, but ~n means
  * to blur by n verses.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class LuceneQueryBuilder implements QueryBuilder {
     /*

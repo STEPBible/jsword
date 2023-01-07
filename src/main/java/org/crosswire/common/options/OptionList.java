@@ -28,9 +28,6 @@ import java.util.Map;
 /**
  * An OptionList contains an ordered set of Options. The primary ability of an
  * OptionList is to find the matches for an Option.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class OptionList {
     public OptionList() {

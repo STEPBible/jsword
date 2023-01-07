@@ -51,9 +51,6 @@ import org.crosswire.jsword.versification.Versification;
  * </ul>
  * I'm not sure which will be best. So I'm starting with 1 and optimizing later
  * ... Maybe the best is to allow the user to choose?
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class RangedPassage extends AbstractPassage {
     /**

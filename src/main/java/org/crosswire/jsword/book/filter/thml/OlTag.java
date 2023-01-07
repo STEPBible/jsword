@@ -28,9 +28,6 @@ import org.xml.sax.Attributes;
 
 /**
  * THML Tag to process the ol element.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class OlTag extends AbstractTag {
     /* (non-Javadoc)

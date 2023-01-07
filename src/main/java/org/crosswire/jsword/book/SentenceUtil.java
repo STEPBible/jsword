@@ -11,9 +11,6 @@ import org.crosswire.common.util.StringUtil;
  * 
  * It is not designed to be used outside of the book package, so using it
  * outside of these bounds is at your own risk.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class SentenceUtil {
     /**

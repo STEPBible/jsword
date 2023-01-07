@@ -32,9 +32,6 @@ import org.junit.Test;
 
 /**
  * A Raw File format that allows for each verse to have it's own storage.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class GenBookTest {
 

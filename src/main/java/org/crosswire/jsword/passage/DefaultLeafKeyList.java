@@ -6,9 +6,6 @@ import org.crosswire.common.util.ItemIterator;
 
 /**
  * A simple default implementation of the Key interface.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultLeafKeyList implements Key {
     /**

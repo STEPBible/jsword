@@ -26,9 +26,6 @@ import org.junit.Test;
  * This would be called TestPassage however then people might think it was a
  * separate TestCase, which it is not, needing to be inherited from to customize
  * the type of test.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class PassageParentTst {
     public PassageParentTst() {

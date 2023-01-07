@@ -28,9 +28,6 @@ import org.crosswire.jsword.index.search.SearchRequest;
 /**
  * A Bookmark remembers a particular view of one or more Books. What is viewed
  * regarding a book set is either a SearchRequest or a key lookup request.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Bookmark extends Serializable, Cloneable {
     /**

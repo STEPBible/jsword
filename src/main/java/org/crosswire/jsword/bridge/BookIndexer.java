@@ -32,9 +32,6 @@ import org.crosswire.jsword.index.IndexStatusListener;
 /**
  * BookIndexer allows one to check the status of an index, build an index or
  * delete an index. This is similar to SWORD's mkfastmod.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BookIndexer {
 

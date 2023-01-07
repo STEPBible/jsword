@@ -6,9 +6,6 @@ import java.util.Map;
 /**
  * A simple implementation of a histogram. It would be nice to enhance it to
  * order on frequency.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Histogram {
     /**

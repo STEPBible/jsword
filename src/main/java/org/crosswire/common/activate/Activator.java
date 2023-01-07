@@ -9,9 +9,6 @@ import java.util.Set;
  * Activator should be used to manage all activate()ions and deactivate()ions so
  * that it can keep a track of exactly what is active and what can be
  * deactivate()d is save memory.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Activator {
     /**

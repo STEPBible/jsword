@@ -8,9 +8,6 @@ import org.crosswire.jsword.JSOtherMsg;
 
 /**
  * A factory for Converters.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  * @see org.crosswire.common.xml.Converter
  */
 public final class ConverterFactory {

@@ -43,9 +43,6 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  * interface. A less complete implementation design for inheritance is available
  * in AbstractBookMetaData where the complexity is in the setup rather than the
  * inheritance. DefaultBookMetaData is probably the preferred implementation.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultBookMetaData extends AbstractBookMetaData {
     /**

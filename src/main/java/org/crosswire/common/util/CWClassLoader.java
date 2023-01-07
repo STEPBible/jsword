@@ -10,9 +10,6 @@ import java.security.PrivilegedAction;
  * places. This is needed so that ResourceBundle can find resources that are not
  * held in the same package as the class. This is expressed as a list of
  * locations, called homes, that the program will look in.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class CWClassLoader extends ClassLoader {
     /**

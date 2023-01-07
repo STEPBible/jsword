@@ -5,9 +5,6 @@ import org.crosswire.jsword.index.query.QueryDecoratorFactory;
 
 /**
  * An Enumeration of the possible types of Searches.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum SearchType {
     /**

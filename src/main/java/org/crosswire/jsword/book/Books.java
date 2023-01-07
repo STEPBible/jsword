@@ -41,9 +41,6 @@ import org.slf4j.LoggerFactory;
 /**
  * The Books class (along with Book) is the central point of contact between the
  * rest of the world and this set of packages.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Books extends AbstractBookList {
     /**

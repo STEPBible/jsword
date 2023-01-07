@@ -36,9 +36,6 @@ import org.crosswire.jsword.passage.VerseRange;
  * the order of BibleBooks by Testament,
  * the number of chapters in each BibleBook,
  * the number of verses in each chapter.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Versification implements ReferenceSystem, Serializable {
     public Versification() {

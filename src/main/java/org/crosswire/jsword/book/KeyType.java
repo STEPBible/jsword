@@ -3,9 +3,6 @@ package org.crosswire.jsword.book;
 
 /**
  * Types of Key that a Book uses, either verse, list, or tree.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum KeyType {
     /**

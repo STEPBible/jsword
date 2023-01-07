@@ -33,9 +33,6 @@ import org.slf4j.LoggerFactory;
  * <li>an alias (@LINK) for another entry</li>
  * <li>a block locator</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DataEntry {
     /**

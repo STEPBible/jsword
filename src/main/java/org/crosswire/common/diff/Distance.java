@@ -23,9 +23,6 @@ package org.crosswire.common.diff;
 /**
  * Compute the distance between 2 strings. The larger the number the greater the
  * distance.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Distance {
     /**

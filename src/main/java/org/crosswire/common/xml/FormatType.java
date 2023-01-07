@@ -2,9 +2,6 @@ package org.crosswire.common.xml;
 
 /**
  * The PrettySerializingContentHandler uses a FormatType to control its output.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum FormatType {
     AS_IS           (false, false, false),

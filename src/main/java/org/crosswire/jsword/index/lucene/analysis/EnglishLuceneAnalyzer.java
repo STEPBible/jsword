@@ -35,9 +35,6 @@ import org.apache.lucene.util.Version;
  * (LowerCaseTokenizer > PorterStemFilter). Like the AbstractAnalyzer,
  * {@link StopFilter} is off by default.
  * 
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class EnglishLuceneAnalyzer extends AbstractBookAnalyzer {
 

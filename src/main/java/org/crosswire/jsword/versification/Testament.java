@@ -22,9 +22,6 @@ package org.crosswire.jsword.versification;
 
 /**
  * Testament is either OLD or NEW. All BibleBooks belong to one or the other, even if deuterocanonical.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum Testament {
     OLD,

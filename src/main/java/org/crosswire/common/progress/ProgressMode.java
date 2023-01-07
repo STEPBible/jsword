@@ -22,9 +22,6 @@ package org.crosswire.common.progress;
 
 /**
  * Progress can be  one of several modes, which correspond to the <code>Progress.beginJob()</code> calls.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum ProgressMode {
     /**

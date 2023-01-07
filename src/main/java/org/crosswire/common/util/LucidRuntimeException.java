@@ -12,9 +12,6 @@ package org.crosswire.common.util;
  * create a subclass of LucidException before you used it, however
  * EventExceptions would be used directly.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  * @see LucidException
  */
 public class LucidRuntimeException extends RuntimeException {

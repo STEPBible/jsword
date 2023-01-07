@@ -33,9 +33,6 @@ import org.apache.commons.compress.utils.IOUtils;
 
 /**
  * GZip manages the compression and uncompression of GZip data.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Gzip extends AbstractCompressor {
     /**

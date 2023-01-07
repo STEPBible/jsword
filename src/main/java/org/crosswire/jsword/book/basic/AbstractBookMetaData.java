@@ -42,14 +42,6 @@ import java.util.Map;
 
 /**
  * An implementation of the Property Change methods from BookMetaData.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
- */
-
-/**
- * @see gnu.lgpl.License for license details.<br>
- * The copyright to this program is held by it's authors.
  */
 public abstract class AbstractBookMetaData implements BookMetaData {
 

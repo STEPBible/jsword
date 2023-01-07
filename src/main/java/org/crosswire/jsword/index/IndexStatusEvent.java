@@ -4,9 +4,6 @@ import java.util.EventObject;
 
 /**
  * An IndexStatusEvent is fired whenever the IndexStatus of a book has changed.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class IndexStatusEvent extends EventObject {
     /**

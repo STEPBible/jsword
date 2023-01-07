@@ -33,9 +33,6 @@ import org.apache.commons.compress.utils.IOUtils;
 
 /**
  * XZ manages the compression and uncompression of XZ data.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class XZ extends AbstractCompressor {
     /**

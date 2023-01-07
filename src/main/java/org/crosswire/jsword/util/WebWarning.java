@@ -36,9 +36,6 @@ import org.slf4j.LoggerFactory;
  * Provide a configurable warning that the Internet is going to be accessed.
  * This is important in places where Internet activity may be monitored and
  * Christians may be persecuted.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class WebWarning {
     /**

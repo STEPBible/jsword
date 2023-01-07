@@ -16,9 +16,6 @@ import java.util.List;
  * the rest of the system is designed to be able to use data from e-Sword, OLB,
  * etc.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Installer extends BookList {
     /**

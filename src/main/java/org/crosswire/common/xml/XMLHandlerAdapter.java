@@ -37,9 +37,6 @@ import org.xml.sax.ext.LexicalHandler;
 
 /**
  * Checks a XML document for problems, reporting line and offset.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class XMLHandlerAdapter implements EntityResolver, DTDHandler, ContentHandler, ErrorHandler, DeclHandler, LexicalHandler {
     /** Default constructor. */

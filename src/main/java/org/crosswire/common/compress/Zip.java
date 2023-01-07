@@ -31,9 +31,6 @@ import java.util.zip.InflaterInputStream;
 
 /**
  * Zip manages the compression and uncompression of Zip files.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Zip extends AbstractCompressor {
     /**

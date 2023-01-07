@@ -35,9 +35,6 @@ import org.crosswire.jsword.book.install.Installer;
 /**
  * Exports the Book in SWORD's imp format. This is identical to SWORD's mod2imp.
  * Note: it does not work with GenBook.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BookInstaller {
 

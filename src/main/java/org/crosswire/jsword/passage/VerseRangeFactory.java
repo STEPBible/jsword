@@ -6,9 +6,6 @@ import org.crosswire.jsword.versification.Versification;
 
 /**
  * A factory that creates VerseRanges from user input.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class VerseRangeFactory {
 

@@ -26,9 +26,6 @@ import org.crosswire.jsword.JSMsg;
  * constructor that allows us to specify no i18n lookup, which is useful if this
  * lookup may have been done already.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  * @see LucidRuntimeException
  */
 public class LucidException extends Exception {

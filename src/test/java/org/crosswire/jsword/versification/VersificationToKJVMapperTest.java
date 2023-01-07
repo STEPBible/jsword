@@ -34,9 +34,6 @@ import org.junit.Test;
 
 /**
  * Some tests based on the principles outlined in the Javadoc of {@link VersificationToKJVMapper }
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class VersificationToKJVMapperTest {
     private final FileVersificationMapping properties = new FileVersificationMapping();

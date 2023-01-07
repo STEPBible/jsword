@@ -22,9 +22,6 @@ package org.crosswire.jsword.book.sword;
 
 /**
  * Data files are indexed by offset and size.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DataIndex {
     /**

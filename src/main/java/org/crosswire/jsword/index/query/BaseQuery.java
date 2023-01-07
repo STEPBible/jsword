@@ -27,9 +27,6 @@ import org.crosswire.jsword.passage.Key;
 
 /**
  * A base query is the smallest unit of search that the index can perform.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BaseQuery extends AbstractQuery {
 

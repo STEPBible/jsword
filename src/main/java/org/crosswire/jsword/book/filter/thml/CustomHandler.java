@@ -42,9 +42,6 @@ import org.xml.sax.helpers.DefaultHandler;
  * This is based upon the THML reference page:
  * <a href="http://www.ccel.org/ThML/ThML1.04.htm">http://www.ccel.org/ThML/ThML1.04.htm</a>
  * to work out what the tags meant.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class CustomHandler extends DefaultHandler {
     /**

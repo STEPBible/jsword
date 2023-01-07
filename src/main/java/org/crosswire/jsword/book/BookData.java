@@ -53,9 +53,6 @@ import org.jdom2.Text;
  * Note: it is critical that all the books are able to understand the same key.
  * That does not mean that each has to have content for each key. Missing keys
  * are represented by empty cells.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BookData implements BookProvider {
     /**

@@ -4,9 +4,6 @@ package org.crosswire.common.xml;
  * RedLetterText remembers when text should be red. Red Letter Text is used to
  * highlight the words of Jesus.
  * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
- * 
  */
 public class RedLetterText {
     private int rlt;

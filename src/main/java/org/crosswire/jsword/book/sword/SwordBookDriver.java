@@ -47,9 +47,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This represents all of the Sword Books (aka modules).
- *
- * @see gnu.lgpl.License for license details.<br>
- * The copyright to this program is held by it's authors.
  */
 public class SwordBookDriver extends AbstractBookDriver {
     /**

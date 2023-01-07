@@ -48,9 +48,6 @@ import org.crosswire.jsword.passage.Key;
  * </ul>
  * <li>The ability to add soundslike type extensions.
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class LuceneSearcher implements Searcher {
     /*

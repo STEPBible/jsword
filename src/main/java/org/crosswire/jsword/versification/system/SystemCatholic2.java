@@ -27,9 +27,6 @@ import org.crosswire.jsword.versification.Versification;
  * The Catholic2 Versification differs from Catholic in that
  * Esther 10 has 13 verses rather than 3 and Esther has 16
  * chapters rather than 10.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemCatholic2 extends Versification {
     /**

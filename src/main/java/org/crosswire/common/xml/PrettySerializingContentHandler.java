@@ -11,9 +11,6 @@ import org.xml.sax.Locator;
 /**
  * This class provides for the formatted serialization of a SAX stream to a
  * <code>Writer</code>.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class PrettySerializingContentHandler implements ContentHandler {
     /**

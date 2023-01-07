@@ -26,9 +26,6 @@ import org.crosswire.jsword.index.search.SearchModifier;
 /**
  * A simple implementation of an Index that provides the set/get for
  * SearchModifier.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 
 public abstract class AbstractIndex implements Index {

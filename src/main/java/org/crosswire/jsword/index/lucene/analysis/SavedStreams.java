@@ -25,9 +25,6 @@ import org.apache.lucene.analysis.Tokenizer;
 
 /**
  * SavedStreams is used to make reusable Lucene analyzers.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 /* package */class SavedStreams {
     /**

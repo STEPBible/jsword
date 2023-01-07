@@ -28,9 +28,6 @@ import org.slf4j.LoggerFactory;
  * When we can't convert some source data then the user doesn't really care and
  * just wants it to work, but it would be good to have some way to get the
  * problems fixed, so as a start point we report them through this class.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class DataPolice {
     /**

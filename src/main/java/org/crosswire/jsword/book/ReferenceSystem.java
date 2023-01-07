@@ -22,9 +22,6 @@ package org.crosswire.jsword.book;
 
 /**
  * A ReferenceSystem is a marker interface.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface ReferenceSystem {
 

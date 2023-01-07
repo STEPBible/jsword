@@ -28,9 +28,6 @@ import org.apache.lucene.analysis.WhitespaceAnalyzer;
 
 /**
  * Robinson Morphological Codes are separated by whitespace.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class MorphologyAnalyzer extends AbstractBookAnalyzer {
 

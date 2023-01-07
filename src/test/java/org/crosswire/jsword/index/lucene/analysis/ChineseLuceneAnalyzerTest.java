@@ -30,9 +30,6 @@ import org.junit.Test;
 
 /**
  * Tokenization and query parsing test
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ChineseLuceneAnalyzerTest {
 

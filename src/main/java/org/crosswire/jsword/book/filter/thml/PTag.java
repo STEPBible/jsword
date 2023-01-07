@@ -28,9 +28,6 @@ import org.xml.sax.Attributes;
 
 /**
  * THML Tag to process the p element.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class PTag extends AbstractTag {
     /* (non-Javadoc)

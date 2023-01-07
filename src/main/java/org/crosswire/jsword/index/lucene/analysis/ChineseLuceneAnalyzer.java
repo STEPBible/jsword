@@ -32,9 +32,6 @@ import org.apache.lucene.analysis.cn.ChineseAnalyzer;
  * 
  * Note: org.apache.lucene.analysis.cn.CJKAnalyzer takes overlapping two
  * character tokenization approach which leads to larger index size.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ChineseLuceneAnalyzer extends AbstractBookAnalyzer {
     public ChineseLuceneAnalyzer() {

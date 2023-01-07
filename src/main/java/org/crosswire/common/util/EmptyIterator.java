@@ -8,7 +8,6 @@ import java.util.NoSuchElementException;
  * nothing.
  * 
  * @param <E> The type of the element that this empty iterator will never return.
- * @see gnu.lgpl.License for license details.<br>
  */
 public class EmptyIterator<E> implements Iterator<E> {
 

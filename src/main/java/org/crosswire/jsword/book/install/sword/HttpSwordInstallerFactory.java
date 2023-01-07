@@ -8,9 +8,6 @@ import org.crosswire.jsword.book.install.InstallerFactory;
 
 /**
  * A Factory for instances of HttpSwordInstaller.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class HttpSwordInstallerFactory implements InstallerFactory {
     /*

@@ -4,9 +4,6 @@ import java.util.EventListener;
 
 /**
  * ReporterListener informs users of problems and messages.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface ReporterListener extends EventListener {
     /**

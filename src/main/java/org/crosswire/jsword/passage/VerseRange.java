@@ -37,9 +37,6 @@ import org.crosswire.jsword.versification.Versification;
  * collections point of view. A VerseRange should always be valid, although some
  * versions may not return any text for verses that they consider to be
  * miss-translated in some way.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class VerseRange implements VerseKey<VerseRange> {
     /**

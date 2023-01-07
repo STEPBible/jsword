@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 /**
  * A SearchRequest consists of a string and modifiers for the search.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface SearchRequest extends Serializable {
     /**

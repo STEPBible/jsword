@@ -45,9 +45,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * An implementation of IndexManager for Lucene indexes.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 /*
 //todo

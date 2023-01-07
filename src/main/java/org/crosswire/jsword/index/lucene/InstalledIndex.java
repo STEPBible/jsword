@@ -12,10 +12,6 @@ import java.net.URI;
 * A singleton that Reads and Maintains Installed Index Metadata (for e.g. version indexed on client machine) in properties file
 * If file does not exist on the client, it will be created
 *   File location: {WritableProjectDir}/JSword/lucene/org.crosswire.jsword.index.lucene.InstalledIndex.properties
-*
-*
-* @see gnu.lgpl.License for license details.<br>
-*      The copyright to this program is held by it's authors.
 */
 
 /*

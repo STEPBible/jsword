@@ -39,9 +39,6 @@ import org.jdom2.Element;
 
 /**
  * A Sword version of Dictionary.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SwordDictionary extends AbstractBook {
     /**

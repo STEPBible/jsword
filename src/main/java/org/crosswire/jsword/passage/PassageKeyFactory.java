@@ -61,9 +61,6 @@ import org.crosswire.jsword.versification.system.Versifications;
  * in the string references could not be understood as a verse. The message
  * of the exception will give the precise reason for the failure.</li></ul>
  * 
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class PassageKeyFactory {
     /**

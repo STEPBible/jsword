@@ -28,9 +28,6 @@ import org.jdom2.Content;
 
 /**
  * A processor that does absolutely nothing.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class NoOpRawTextProcessor implements RawTextToXmlProcessor {
 

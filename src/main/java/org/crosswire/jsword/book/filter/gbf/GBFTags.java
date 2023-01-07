@@ -37,9 +37,6 @@ import org.jdom2.Text;
 
 /**
  * A holder of all of the GBF Tag Handler classes.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class GBFTags {
     /**

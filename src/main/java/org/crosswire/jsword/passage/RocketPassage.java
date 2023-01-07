@@ -31,9 +31,6 @@ import org.crosswire.jsword.versification.Versification;
  * quickly once let of the leash. It manages its speed by creating contained
  * instances of DistinctPassage and RangedPassage and selects the fastest
  * implementation for each of its methods from the 3 available.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class RocketPassage extends BitwisePassage {
     /**

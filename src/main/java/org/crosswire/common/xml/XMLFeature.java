@@ -4,9 +4,6 @@ package org.crosswire.common.xml;
 /**
  * Wraps an XML Feature. The "known" set of XML Features is found in
  * XMLFeatureSet.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum XMLFeature {
     /** Namespaces feature id */

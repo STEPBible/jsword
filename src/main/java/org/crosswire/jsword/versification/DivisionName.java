@@ -48,9 +48,6 @@ import org.crosswire.jsword.JSMsg;
  * <li>A given V11N might be a single testament or just the gospels. In this case,
  * it'd be good to know whether a division isDefined()</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum DivisionName {
     /** BIBLE consists of the entire/whole Bible (Gen - Rev) **/

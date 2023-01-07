@@ -27,9 +27,6 @@ import java.util.Locale;
  * <p />
  * It is expected that the LocaleProvider will only be set once, as a result, no effort is made to make this thread-safe as this should happen on
  * start up of the application. A default locale provider is given which simply returns the default locale. See {@link DefaultLocaleProvider} for more details.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class LocaleProviderManager {
     /**

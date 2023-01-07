@@ -6,9 +6,6 @@ import java.util.List;
 
 /**
  * .
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class FileUtil {
     /**

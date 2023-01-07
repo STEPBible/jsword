@@ -63,9 +63,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * The AbstractSwordInstaller provides for the common implementation of derived classes.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractSwordInstaller extends AbstractBookList implements Installer, Comparable<AbstractSwordInstaller> {
 

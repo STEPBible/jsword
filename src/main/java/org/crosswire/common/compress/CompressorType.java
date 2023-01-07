@@ -24,9 +24,6 @@ import java.io.ByteArrayInputStream;
 
 /**
  * An Enumeration of the possible Compressions.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum CompressorType {
     ZIP {

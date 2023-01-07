@@ -50,9 +50,6 @@ import org.xml.sax.SAXParseException;
  * ://www.ccel.org/ThML/ThML1.04.htm</a> to work out what the tags meant.
  *
  * LATER(joe): check nesting on these THML elements
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class THMLFilter implements Filter {
     /* (non-Javadoc)

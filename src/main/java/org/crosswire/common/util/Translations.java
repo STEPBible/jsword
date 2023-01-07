@@ -32,9 +32,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Translations provides a list of locales that BibleDesktop has been translated
  * into.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Translations {
     /**

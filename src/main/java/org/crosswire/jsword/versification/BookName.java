@@ -28,9 +28,6 @@ import org.crosswire.jsword.book.CaseType;
 
 /**
  * BookName represents the different ways a book of the bible is named.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class BookName {
     /**

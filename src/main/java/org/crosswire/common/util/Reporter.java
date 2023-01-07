@@ -51,9 +51,6 @@ import org.slf4j.LoggerFactory;
  * app more susceptible to the configuration of the things that listen to
  * reports.</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Reporter {
     /**

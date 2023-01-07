@@ -7,9 +7,6 @@ import org.crosswire.jsword.passage.NoSuchKeyException;
 
 /**
  * An index into a body of text that knows what words exist and where they are.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Index {
     /**

@@ -31,8 +31,6 @@ import org.crosswire.jsword.versification.Versification;
  * and books seen in some editions of the LXX but absent from modern
  * Orthodox Bibles have been omitted.
  *  
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemOrthodox extends Versification {
     /**

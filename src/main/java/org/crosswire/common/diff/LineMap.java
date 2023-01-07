@@ -29,9 +29,6 @@ import java.util.Map;
  * LineMap is a heuristic algorithm that allows the differencing of a
  * representation of lines. A Diff of the source and target maps can be
  * reconstituted with restore.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class LineMap {
     /**

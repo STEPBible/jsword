@@ -39,9 +39,6 @@ import org.xml.sax.Attributes;
  * last text element is already surrounded with a w element then this is added
  * to it. As a simplifying assumption, we will assume that the text element is
  * not contained by anything except perhaps by a w element.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SyncTag extends AbstractTag {
     /* (non-Javadoc)

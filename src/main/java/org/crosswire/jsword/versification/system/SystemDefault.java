@@ -26,9 +26,6 @@ import org.crosswire.jsword.versification.Versification;
 /**
  * The SystemDefault versification (v11n) is that of the Protestant KJV.
  * This is the first v11n defined within JSword and SWORD.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemDefault extends Versification {
     public static final String V11N_NAME = "";

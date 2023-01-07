@@ -28,9 +28,6 @@ import org.crosswire.jsword.versification.Versification;
  * but with a modified NT book order similar to those of the Synodal v11n
  * and merged with verse counts similar to those of the Synodal v11n
  *
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemSynodalProt extends Versification {
     /**

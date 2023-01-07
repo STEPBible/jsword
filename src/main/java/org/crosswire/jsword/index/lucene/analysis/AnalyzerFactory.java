@@ -40,9 +40,6 @@ import org.slf4j.LoggerFactory;
  * Properties used: <Key> : <Value> Default.Analyzer : The default analyzer
  * class [Lang].Analyzer : Appropriate Analyzer class to be used for the
  * language of the book
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class AnalyzerFactory {
     public AbstractBookAnalyzer createAnalyzer(Book book) {

@@ -5,9 +5,6 @@ import java.util.EventListener;
 /**
  * A PassageListener gets told when the verses in a Passage have changed (added
  * or removed).
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface PassageListener extends EventListener {
     /**

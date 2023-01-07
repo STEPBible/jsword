@@ -29,9 +29,6 @@ import org.crosswire.jsword.versification.Versification;
  * The Leningrad Codex places them between Malachi and Psalms,
  * while the Masoretic Text puts it after Nehemiah at the end of the
  * Old Testament.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemLeningrad extends Versification {
     /**

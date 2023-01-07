@@ -11,9 +11,6 @@ import org.crosswire.jsword.versification.Versification;
  * This is a simple proxy to a real Passage object that makes all accesses
  * synchronized. It is final to give the VM as much hope as possible at being
  * able to inline stuff.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 final class SynchronizedPassage implements Passage {
     /**

@@ -35,9 +35,6 @@ import org.junit.Test;
  * Test of functionality for use with DWR. This test assumes, at a minimum, that
  * KJV, Strong's Greek and Hebrew Dictionaries, Robinson's morphological codes,
  * ... are installed and that the KJV is indexed.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 // TODO: make this test use mocks or setup its own environment
 public class DwrBridgeMissingAssets {

@@ -5,9 +5,6 @@ import org.crosswire.jsword.JSOtherMsg;
 
 /**
  * Block types indicates the grain of compression.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum BlockType {
     /**

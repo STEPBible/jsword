@@ -19,9 +19,6 @@ import org.slf4j.LoggerFactory;
  * search requirements.
  * 
  * Uses AnalyzerFactory for InstalledIndexVersion > 1.1
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class LuceneAnalyzer extends Analyzer {
 

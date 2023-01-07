@@ -11,9 +11,6 @@ import org.crosswire.jsword.versification.Versification;
 /**
  * This is a simple proxy to a real Passage object that denies all attempts to
  * write to it.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 final class ReadOnlyPassage implements Passage {
     /**

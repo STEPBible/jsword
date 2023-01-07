@@ -32,9 +32,6 @@ import org.slf4j.LoggerFactory;
  * 
  * <p>
  * This implementation uses <tt>java.util.List</tt> to store keys.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultKeyList extends AbstractKeyList {
     /**

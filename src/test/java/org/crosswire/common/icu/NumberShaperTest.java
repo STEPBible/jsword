@@ -32,9 +32,6 @@ import org.junit.Test;
 
 /**
  * JUnit test of NumberShaper.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class NumberShaperTest {
     private static final String europeanDigits = "0123456789";

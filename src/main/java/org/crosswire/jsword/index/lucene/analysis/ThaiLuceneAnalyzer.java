@@ -32,9 +32,6 @@ import org.apache.lucene.util.Version;
 /**
  * Tokenization using ThaiWordFilter. It uses java.text.BreakIterator to break
  * words. Stemming: Not implemented
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ThaiLuceneAnalyzer extends AbstractBookAnalyzer {
 

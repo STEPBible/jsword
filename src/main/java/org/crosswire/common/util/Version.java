@@ -36,9 +36,6 @@ import java.util.regex.Pattern;
  * micro ::= [0-9]+
  * nano  ::= [0-9]+
  * </pre>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Version implements Comparable<Version> {
     public static final Pattern VERSION_PATTERN = Pattern.compile("^(\\d+)(?:.(\\d+))?(?:.(\\d+))?(?:.(\\d+))?$");

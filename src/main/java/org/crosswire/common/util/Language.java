@@ -30,9 +30,6 @@ import java.util.Locale;
  * <li>CC - A 2-letter iso3166 country code</li>
  * </ul>
  * Note: This is a subset of the BCP-47 standard.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Language implements Comparable<Language> {
     /**

@@ -3,9 +3,6 @@ package org.crosswire.jsword.passage;
 /**
  * A default implementation of KeyVisitor that does nothing, for use in
  * inheritance where you want to save space by not overriding all methods.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultKeyVisitor implements KeyVisitor {
     /*

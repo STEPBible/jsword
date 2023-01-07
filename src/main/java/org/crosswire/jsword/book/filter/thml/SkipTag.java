@@ -26,9 +26,6 @@ import org.jdom2.Element;
 
 /**
  * Skip the tag and it's content.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SkipTag extends AnonymousTag {
     /**

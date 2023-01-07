@@ -42,9 +42,6 @@ import java.util.regex.Pattern;
  * <li>Greek: 1-5624 (but not 1418, 2717, 3203-3302, 4452)
  * </ul>
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class StrongsNumber {
     /**

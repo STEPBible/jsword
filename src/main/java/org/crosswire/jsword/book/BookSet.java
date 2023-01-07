@@ -12,9 +12,6 @@ import org.crosswire.common.util.Filter;
 /**
  * BookSet represents a collection of descriptions about Books which may be
  * subsetted into other BookMetaDataSets. Each set is naturally ordered.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BookSet extends ArrayList<Book> implements Set<Book> {
     public BookSet() {

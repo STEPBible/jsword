@@ -34,9 +34,6 @@ import org.slf4j.LoggerFactory;
  * DateFormat provides a wrapper of some of DateFormat and SimpleDateFormat
  * using ICU4J if present, otherwise from core Java. Note, only those methods in
  * DateFormat that are actually used are here.
- *
- * @see gnu.lgpl.License for license details.<br>
- * The copyright to this program is held by it's authors.
  */
 public final class DateFormatter {
     // Note these values are the same for Java and ICU4J

@@ -56,9 +56,6 @@ import org.slf4j.LoggerFactory;
  * The best place to go for more information about the GBF spec that I have
  * found is: <a
  * href="http://ebible.org/bible/gbf.htm">http://ebible.org/bible/gbf.htm</a>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class GBFTagBuilders {
     /**

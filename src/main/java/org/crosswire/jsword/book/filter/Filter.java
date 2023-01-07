@@ -28,9 +28,6 @@ import org.jdom2.Content;
 
 /**
  * A generic interface for things that can convert a String into OSIS data.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Filter extends Cloneable {
     /**

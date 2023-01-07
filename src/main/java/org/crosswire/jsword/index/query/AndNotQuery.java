@@ -28,9 +28,6 @@ import org.crosswire.jsword.passage.Key;
 /**
  * An "And Not" query specifies that a result needs to be in the left but not in
  * the right query result.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class AndNotQuery extends AbstractBinaryQuery {
 

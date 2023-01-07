@@ -57,8 +57,6 @@ import org.slf4j.LoggerFactory;
  * target Versifications. That it uses the KJV as an intermediary is an
  * implementation detail that may change. Do not rely on it.
  * </p>
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class VersificationsMapper {
     /**

@@ -35,9 +35,6 @@ import org.crosswire.jsword.book.BookCategory;
  * now located at http://www.crosswire.org/wiki/DevTools:confFiles<br/>
  * <p>
  * Note: This file is organized the same as the latest wiki documentation.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum ConfigEntryType {
     /**

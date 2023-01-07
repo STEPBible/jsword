@@ -120,9 +120,6 @@ import org.slf4j.LoggerFactory;
  * <p>
  * TODO(CJB): think about whether when returning, we should clone, or make things immutable.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class VersificationToKJVMapper {
 

@@ -34,9 +34,6 @@ import org.slf4j.LoggerFactory;
 /**
  * A singleton that Reads and Maintains IndexMetadata from properties file All
  * version number in the properties file must be float.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class IndexMetadata {
 

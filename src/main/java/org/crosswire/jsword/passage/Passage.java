@@ -69,9 +69,6 @@ import java.util.Iterator;
  * <p>
  * I considered giving Passages names to allow for a CLI that could use named
  * RangedPassages, however that is perhaps better left to another class.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Passage extends VerseKey<Passage> {
     /**

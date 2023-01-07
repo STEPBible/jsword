@@ -9,9 +9,6 @@ import org.crosswire.common.util.ClassUtil;
  * Allows xalan's xslt process class to be invoked as a command line
  * application. Java 5 has renamed the main routine to _main. This class
  * normalizes the difference between Java 1.4 and 1.5 (aka 5).
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class XalanProcess {
     /**

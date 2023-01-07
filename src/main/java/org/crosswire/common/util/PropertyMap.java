@@ -33,8 +33,6 @@ import java.util.Properties;
  * As such it must be defined in the same way as a java.lang.Properties expects.
  *
  * @see java.lang.Properties
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class PropertyMap extends LinkedHashMap<String, String> {
     /**

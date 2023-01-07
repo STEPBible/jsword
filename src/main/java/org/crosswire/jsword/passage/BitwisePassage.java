@@ -44,9 +44,6 @@ import org.crosswire.jsword.versification.system.Versifications;
  * would waste 1 bit per BitSet but since this doesn't cause BitSet to need an
  * extra long it doesn't, and it saves us some maths.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BitwisePassage extends AbstractPassage {
     /**

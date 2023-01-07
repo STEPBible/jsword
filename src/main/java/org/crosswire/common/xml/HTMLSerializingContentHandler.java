@@ -5,9 +5,6 @@ import java.io.Writer;
 /**
  * This class provides for the formatted and syntax highlighted serialization of
  * a SAX stream to a <code>Writer</code>.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class HTMLSerializingContentHandler extends PrettySerializingContentHandler {
     /**

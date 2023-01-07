@@ -43,8 +43,6 @@ import org.slf4j.LoggerFactory;
  * abstracts out the similarities.
  * 
  * @param <T> The type of the RawBackendState that this class extends.
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class RawBackend<T extends RawBackendState> extends AbstractBackend<RawBackendState> {
 

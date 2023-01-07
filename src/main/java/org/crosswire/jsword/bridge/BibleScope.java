@@ -29,9 +29,6 @@ import org.crosswire.jsword.versification.BookName;
 /**
  * Determines the scope of the Bible. That is, the verses that are in the Bible
  * and the verses that are not. This is based upon the KJV versification.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BibleScope {
 

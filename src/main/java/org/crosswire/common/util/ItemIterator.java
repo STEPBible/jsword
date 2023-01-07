@@ -28,7 +28,6 @@ import java.util.NoSuchElementException;
  * single item.
  * 
  * @param <T> The type of the single element that this iterator will return.
- * @see gnu.lgpl.License for license details.<br>
  */
 public class ItemIterator<T> implements Iterator<T> {
     public ItemIterator(T item) {

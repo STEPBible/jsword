@@ -33,9 +33,6 @@ import static org.junit.Assert.assertEquals;
 /**
  * Tests a simple two step versifications. And the edge cases,
  * of wanting to go to KJV.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class VersificationsMapperTest {
     private static final Versification KJV = Versifications.instance().getVersification(SystemKJV.V11N_NAME);

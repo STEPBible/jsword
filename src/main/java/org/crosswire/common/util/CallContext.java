@@ -6,9 +6,6 @@ package org.crosswire.common.util;
  * called it.
  * <p>
  * It has been tested to work in command line and WebStart environments.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class CallContext {
     /**

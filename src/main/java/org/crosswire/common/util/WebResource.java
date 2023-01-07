@@ -49,9 +49,6 @@ import org.crosswire.jsword.JSMsg;
  * constructor or previously by a call to set the default timeout. The initial
  * default timeout is 750 milliseconds.
  * 
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class WebResource {
     /**

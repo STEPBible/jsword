@@ -8,9 +8,6 @@ import org.crosswire.jsword.internationalisation.LocaleProviderManager;
 /**
  * A utility class that converts ISO-3166 codes or locales to their "friendly"
  * country name.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Countries {
     /**

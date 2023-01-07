@@ -31,9 +31,6 @@ import java.util.TreeSet;
  * and H stand for Greek and Hebrew respectively and d is the actual number,
  * zero padded to 4 digits. The value for a MapEntry is a Set of Strings, which
  * are the various ways a Strong's Number is marked up.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class StrongsMapSet {
     /**

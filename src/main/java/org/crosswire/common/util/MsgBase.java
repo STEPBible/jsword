@@ -34,9 +34,6 @@ import org.slf4j.LoggerFactory;
 /**
  * A base class for implementing type safe internationalization (i18n) that is
  * easy for most cases.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class MsgBase {
     /**

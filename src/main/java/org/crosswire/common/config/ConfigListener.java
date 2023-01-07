@@ -24,9 +24,6 @@ import java.util.EventListener;
 
 /**
  * ConfigListener.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface ConfigListener extends EventListener {
     /**

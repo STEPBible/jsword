@@ -29,9 +29,6 @@ import org.xml.sax.Attributes;
 /**
  * THML Tag to process the verse element. Note: the verse element surrounds
  * poetry.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class VerseTag extends AbstractTag {
     /* (non-Javadoc)

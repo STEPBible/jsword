@@ -59,9 +59,6 @@ import org.slf4j.LoggerFactory;
  * for USB Drives and other portable implementations of JSword. It is
  * recommended that this name be JSword.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class CWProject {
     /**

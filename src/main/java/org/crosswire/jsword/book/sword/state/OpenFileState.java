@@ -27,9 +27,6 @@ import org.crosswire.jsword.book.sword.SwordBookMetaData;
 /**
  * Marker interface for objects holding open files that should be freed up upon finishing
  *
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface OpenFileState extends Closeable {
 

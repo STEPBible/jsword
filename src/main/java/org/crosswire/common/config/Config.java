@@ -77,9 +77,6 @@ import org.slf4j.LoggerFactory;
  * have been changed in the screen data, and so that we can load data from disk
  * to screen without involving the app.
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Config implements Iterable<Choice> {
     /**

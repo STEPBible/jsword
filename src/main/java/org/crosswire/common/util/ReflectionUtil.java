@@ -6,9 +6,6 @@ import java.lang.reflect.Method;
 
 /**
  * Various utilities for calling constructors and methods via introspection.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class ReflectionUtil {
     /**

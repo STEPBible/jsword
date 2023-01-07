@@ -43,9 +43,6 @@ import org.slf4j.LoggerFactory;
  * TreeKeyIndex reads Sword index files that are path based. Paths are of the
  * form /a/b/c, and can be of any depth. The ultimate output of a TreeKeyIndex
  * is the offset and length of a chunk of data in another file that can be read.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class TreeKeyIndex implements Activatable {
     /**

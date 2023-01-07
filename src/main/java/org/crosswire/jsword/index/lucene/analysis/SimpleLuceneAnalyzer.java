@@ -37,9 +37,6 @@ import org.apache.lucene.analysis.TokenStream;
  * enhancement using method - public TokenStream reusableTokenStream(String
  * fieldName, Reader reader) We should use that. Ref:
  * https://issues.apache.org/jira/browse/LUCENE-969
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SimpleLuceneAnalyzer extends AbstractBookAnalyzer {
 

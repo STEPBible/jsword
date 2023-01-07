@@ -5,9 +5,6 @@ import java.io.Serializable;
 /**
  * A node that knows where the data is in the real file and where it is in
  * relationship to other nodes.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 class TreeNode implements Cloneable, Serializable {
     /**

@@ -8,9 +8,6 @@ import org.crosswire.jsword.book.BookException;
 /**
  * The AbstractBookDriver class implements some BibleDriver methods, making a
  * simple read-only BibleDriver.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractBookDriver implements BookDriver {
     /*

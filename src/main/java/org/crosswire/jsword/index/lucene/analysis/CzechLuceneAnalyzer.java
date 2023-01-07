@@ -33,9 +33,6 @@ import org.apache.lucene.util.Version;
  * An Analyzer whose {@link TokenStream} is built from a
  * {@link LowerCaseTokenizer} filtered with {@link StopFilter} (optional).
  * Stemming not implemented yet
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class CzechLuceneAnalyzer extends AbstractBookAnalyzer {
     public CzechLuceneAnalyzer() {

@@ -22,9 +22,6 @@ package org.crosswire.common.util;
 
 /**
  * An URIFilter that accepts all names.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultURIFilter implements URIFilter {
     /*

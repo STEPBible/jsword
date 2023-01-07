@@ -37,9 +37,6 @@ package org.crosswire.common.options;
  * the long name is dependent upon usage, but typically does not allow spaces.</li>
  * <li>An Option can have a default value. Default is no default value.</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Option {
     /**

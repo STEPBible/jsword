@@ -38,9 +38,6 @@ import org.slf4j.LoggerFactory;
 /**
  * A utility class that converts bcp-47 codes as supported by {@link Language} to their
  * localized language name.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Languages {
 

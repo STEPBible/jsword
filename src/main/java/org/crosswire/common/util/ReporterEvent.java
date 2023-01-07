@@ -6,9 +6,6 @@ import org.crosswire.common.icu.NumberShaper;
 
 /**
  * An event indicating that some bit of data needs capturing.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ReporterEvent extends EventObject {
     /**

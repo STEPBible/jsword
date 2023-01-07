@@ -13,9 +13,6 @@ import org.crosswire.jsword.book.install.InstallException;
 
 /**
  * An implementation of Installer for reading data from Sword Web sites.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class HttpSwordInstaller extends AbstractSwordInstaller {
 

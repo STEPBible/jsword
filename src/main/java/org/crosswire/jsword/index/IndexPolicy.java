@@ -25,9 +25,6 @@ package org.crosswire.jsword.index;
  * of Index creation. This class will change from time to time
  * so it is important to derive from IndexPolicyAdapter to
  * provide application resiliency.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface IndexPolicy {
     /**

@@ -28,8 +28,6 @@ import java.util.Map;
  * 
  * @param <K> the key's type
  * @param <V> the value's type
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface MappedChoice<K, V> extends Choice {
     /**

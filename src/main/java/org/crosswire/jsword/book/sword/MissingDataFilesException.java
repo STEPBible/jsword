@@ -24,9 +24,6 @@ import org.crosswire.jsword.book.BookException;
 
 /**
  * Indicates that the files are missing, and therefore this book should be excluded
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class MissingDataFilesException extends BookException {
     /**

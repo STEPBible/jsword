@@ -29,9 +29,6 @@ import org.crosswire.jsword.passage.PassageTally;
 /**
  * An AND query specifies that a result needs to be in both the left and the
  * right query results.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class AndQuery extends AbstractBinaryQuery {
 

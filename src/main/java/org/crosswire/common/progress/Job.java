@@ -37,9 +37,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A Generic method of keeping track of Threads and monitoring their progress.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class Job implements Progress {
     /**

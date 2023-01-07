@@ -120,12 +120,6 @@ import java.util.Arrays;
  * [2] J. A. Storer and T. G. Szymanski, J. ACM, 29, 928-951 (1982).<br/>
  * [3] T.C. Gell, IEEE Transactions COM-34, 1176-1182 (1986).
  * </p>
- * 
- * Regarding this port to Java and not the original code, the following license
- * applies:
- * 
- * @see gnu.lgpl.License for license details.<br/>
- *      The copyright to this program is held by it's authors.
  */
 public class LZSS extends AbstractCompressor {
     /**

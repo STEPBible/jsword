@@ -37,9 +37,6 @@ import org.slf4j.LoggerFactory;
  * 
  * The caller is required to close to correctly free resources and avoid File
  * pointer leaks
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class RawFileBackendState extends RawBackendState {
     /**

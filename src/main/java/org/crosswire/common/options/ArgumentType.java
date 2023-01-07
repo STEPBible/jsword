@@ -23,9 +23,6 @@ package org.crosswire.common.options;
 /**
  * An ArgumentType indicates whether and/or how an Option is followed by an
  * argument.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum ArgumentType {
     /**

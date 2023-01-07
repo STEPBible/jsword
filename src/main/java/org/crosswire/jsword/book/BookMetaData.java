@@ -46,9 +46,6 @@ import org.jdom2.Document;
  * JSword. So Books must be able to add versions to the system, and the system
  * must cope with books that already exist.
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface BookMetaData extends Comparable<BookMetaData> {
     /**

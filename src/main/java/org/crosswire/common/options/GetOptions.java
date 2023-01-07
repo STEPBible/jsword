@@ -63,9 +63,6 @@ import java.util.Map;
  * <li>Unrecognized flags are an error.</li>
  * <li>Unrecognized arguments are moved after the processed flags.</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class GetOptions {
     public GetOptions(String programName, String[] args, OptionList programOptions) {

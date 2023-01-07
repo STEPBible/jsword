@@ -24,9 +24,6 @@ import java.util.Locale;
 
 /**
  * A default Locale provider simply returns Locale.getDefault()
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultLocaleProvider implements LocaleProvider {
 

@@ -27,9 +27,6 @@ import java.util.NoSuchElementException;
 /**
  * A BibleBookList is an ordered list of one or more BibleBooks.
  * Typically, a BibleBookList is a member of a Versification.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 /* pkg protected */ class BibleBookList implements Iterable<BibleBook>, Serializable {
     /**

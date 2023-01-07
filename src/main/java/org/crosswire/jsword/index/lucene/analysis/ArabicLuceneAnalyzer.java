@@ -37,9 +37,6 @@ import org.apache.lucene.util.Version;
  * {@link ArabicLetterTokenizer} filtered with {@link LowerCaseFilter},
  * {@link ArabicNormalizationFilter}, {@link ArabicStemFilter} (optional) and
  * Arabic {@link StopFilter} (optional).
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ArabicLuceneAnalyzer extends AbstractBookAnalyzer {
     public ArabicLuceneAnalyzer() {

@@ -27,9 +27,6 @@ import org.crosswire.jsword.versification.Versification;
  * The NRSV Versification is nearly the same as the KJV versification.
  * It differs in that 3 John has 15 verses not 14 and Revelation 12
  * has 18 verses not 17.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemNRSV extends Versification {
     /**

@@ -4,9 +4,6 @@ package org.crosswire.jsword.book;
 
 /**
  * An Enumeration of the possible Features a Book may have.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum FeatureType {
     /**

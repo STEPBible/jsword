@@ -3,9 +3,6 @@ package org.crosswire.jsword.passage;
 
 /**
  * When something tries to use a verse that we don't understand.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class NoSuchVerseException extends NoSuchKeyException {
     /**

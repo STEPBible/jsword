@@ -20,9 +20,6 @@ import org.crosswire.jsword.passage.Verse;
 
 /**
  * Start of a mechanism to extract a Bible module to OSIS.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BibleToOsis {
     /**

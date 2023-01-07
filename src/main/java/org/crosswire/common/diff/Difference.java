@@ -24,9 +24,6 @@ package org.crosswire.common.diff;
  * 
  * Represents a single difference, consisting of an EditType and associated
  * text.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Difference {
     public Difference(EditType edit, String text) {

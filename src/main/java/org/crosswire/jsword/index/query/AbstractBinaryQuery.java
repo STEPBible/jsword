@@ -23,9 +23,6 @@ package org.crosswire.jsword.index.query;
 
 /**
  * A binary query has a left query and right query.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractBinaryQuery implements BinaryQuery {
     /**

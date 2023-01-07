@@ -28,9 +28,6 @@ import org.xml.sax.Attributes;
 
 /**
  * THML Tag to process an element that does not map to OSIS.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class AnonymousTag extends AbstractTag {
     public AnonymousTag(String name) {

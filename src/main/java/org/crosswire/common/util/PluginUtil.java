@@ -36,9 +36,6 @@ import org.slf4j.LoggerFactory;
  * A plugin maps one or more implementations to an interface or abstract class
  * via a properties file whose suffix is "plugin". When there is more than one
  * implementation, one is marked as a default.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class PluginUtil {
     /**

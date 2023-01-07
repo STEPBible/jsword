@@ -17,9 +17,6 @@ import org.junit.Test;
 
 /**
  * JUnit Test.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class LZSSTest {
     public static final int RING_SIZE = 4096;

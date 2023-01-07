@@ -6,9 +6,6 @@ import org.crosswire.jsword.index.query.QueryDecorator;
 /**
  * LuceneQueryDecorator represents the extension of stock Lucene syntax with
  * passage ranges and with blurring (searching in nearby verses).
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class LuceneQueryDecorator implements QueryDecorator {
     /*

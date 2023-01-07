@@ -6,9 +6,6 @@ import org.crosswire.jsword.JSOtherMsg;
 
 /**
  * A read-only wrapper around any writable implementation of Key.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ReadOnlyKeyList implements Key {
     /**

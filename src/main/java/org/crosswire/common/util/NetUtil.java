@@ -49,9 +49,6 @@ import org.slf4j.LoggerFactory;
 /**
  * The NetUtil class looks after general utility stuff around the java.net
  * package.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class NetUtil {
     /**

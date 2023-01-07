@@ -36,9 +36,6 @@ import org.junit.runners.Parameterized;
 
 /**
  * JUnit Test
- *
- * @see gnu.lgpl.License for license details.<br>
- * The copyright to this program is held by it's authors.
  */
 @RunWith(Parameterized.class)
 public class FileVersificationMappingTest {

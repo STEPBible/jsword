@@ -29,9 +29,6 @@ import org.crosswire.jsword.passage.PassageTally;
 /**
  * An OR query specifies that a result is the union of the left and the right
  * query results.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class OrQuery extends AbstractBinaryQuery {
 

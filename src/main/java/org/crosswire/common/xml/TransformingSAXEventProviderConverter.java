@@ -5,9 +5,6 @@ import java.net.URI;
 /**
  * An implementation of Converter that uses a TransformingSAXEventProvider to
  * transform one SAXEventProvider into another SAXEventProvider using XSL.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class TransformingSAXEventProviderConverter implements Converter {
     /**

@@ -24,9 +24,6 @@ import java.io.InputStream;
 
 /**
  * A compressor provides the ability to compress and uncompress text.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractCompressor implements Compressor {
     public AbstractCompressor(InputStream input) {

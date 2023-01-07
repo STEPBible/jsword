@@ -28,9 +28,6 @@ import org.crosswire.jsword.book.Book;
 /**
  * Base class for Analyzers. Note: All analyzers configured in
  * AnalyzerFactory.properties should be of this type
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractBookAnalyzer extends Analyzer {
 

@@ -50,9 +50,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Some simple utilities to help working with OSIS classes.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class OSISUtil {
     private static final char SPACE_SEPARATOR = ' ';

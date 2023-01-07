@@ -15,9 +15,6 @@ import org.crosswire.jsword.book.basic.AbstractBookDriver;
 
 /**
  * A driver for the readings dictionary.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class ReadingsBookDriver extends AbstractBookDriver {
     /**

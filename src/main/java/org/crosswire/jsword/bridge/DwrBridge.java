@@ -42,9 +42,6 @@ import org.xml.sax.SAXException;
 
 /**
  * The DWR DwrBridge adapts JSword to DWR. This is based upon APIExamples.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DwrBridge {
     /**

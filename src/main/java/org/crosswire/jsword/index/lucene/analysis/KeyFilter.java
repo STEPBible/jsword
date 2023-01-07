@@ -27,9 +27,6 @@ import org.crosswire.jsword.book.Book;
 
 /**
  * A KeyFilter normalizes Key.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class KeyFilter extends AbstractBookTokenFilter {
     /**

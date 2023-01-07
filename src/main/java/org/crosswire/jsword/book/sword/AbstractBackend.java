@@ -47,8 +47,6 @@ import org.slf4j.LoggerFactory;
  * A generic way to read data from disk for later formatting.
  *
  * @param <T> The type of the OpenFileState that this class extends.
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractBackend<T extends OpenFileState> implements StatefulFileBackedBackend<T>, Backend<T> {
 

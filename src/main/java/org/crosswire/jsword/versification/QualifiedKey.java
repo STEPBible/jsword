@@ -39,9 +39,6 @@ import org.crosswire.jsword.versification.system.Versifications;
  * The mapping can indicate a part of a verse. This is an internal implementation detail of the Versification mapping code.
  * Here it is used to distinguish one QualifiedKey from another in equality tests and in containers.
  * </p>
- *
- * @see gnu.lgpl.License for license details.<br>
- * The copyright to this program is held by it's authors.
  */
 public final class QualifiedKey {
     /**

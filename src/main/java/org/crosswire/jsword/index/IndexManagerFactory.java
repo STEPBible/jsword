@@ -28,9 +28,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A Factory class for IndexManagers.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class IndexManagerFactory {
     /**

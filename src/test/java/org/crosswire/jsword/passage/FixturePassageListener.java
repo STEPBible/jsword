@@ -2,9 +2,6 @@ package org.crosswire.jsword.passage;
 
 /**
  * To help us test the VerseCollectionListener interface.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 class FixturePassageListener implements PassageListener {
     public int adds = 0;

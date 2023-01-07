@@ -3,9 +3,6 @@ package org.crosswire.jsword.index.query;
 /**
  * A QueryDecorator allows for the decoration of strings in a way that is
  * appropriate for a Query.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface QueryDecorator {
     String decoratePhrase(String queryWords);

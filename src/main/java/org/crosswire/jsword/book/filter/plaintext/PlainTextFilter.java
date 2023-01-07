@@ -34,9 +34,6 @@ import org.jdom2.Element;
  * Filter to convert plain text to OSIS format. Plain text is nothing more than
  * lines without markup. Unfortunately, it often uses whitespace for markup. We
  * will use OSIS lb to mark lines.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class PlainTextFilter implements Filter {
     /* (non-Javadoc)

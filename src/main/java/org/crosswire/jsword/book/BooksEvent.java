@@ -6,9 +6,6 @@ import java.util.EventObject;
 
 /**
  * A BooksEvent is fired whenever a Bible is added or removed from the system.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BooksEvent extends EventObject {
     /**

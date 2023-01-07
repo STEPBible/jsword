@@ -37,9 +37,6 @@ import org.jdom2.Document;
  * Book is the most basic store of textual data - It can retrieve data either as
  * an XML document or as plain text - It uses Keys to refer to parts of itself,
  * and can search for words (returning Keys).
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Book extends Activatable, Comparable<Book> {
     /**

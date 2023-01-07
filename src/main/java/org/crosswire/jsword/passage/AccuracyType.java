@@ -40,9 +40,6 @@ import org.crosswire.jsword.versification.Versification;
  * In all of these examples, the start verse was being interpreted. In the case
  * of a verse that is the end of a range, it is interpreted in the context of
  * the range's start.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum AccuracyType {
     /**

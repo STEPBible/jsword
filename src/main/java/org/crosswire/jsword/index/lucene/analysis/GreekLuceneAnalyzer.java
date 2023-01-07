@@ -33,9 +33,6 @@ import org.apache.lucene.util.Version;
 /**
  * Uses org.apache.lucene.analysis.el.GreekAnalyzer to do lowercasing and
  * stopword(off by default). Stemming not implemented yet
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class GreekLuceneAnalyzer extends AbstractBookAnalyzer {
     public GreekLuceneAnalyzer() {

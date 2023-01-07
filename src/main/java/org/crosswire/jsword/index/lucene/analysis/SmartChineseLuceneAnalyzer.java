@@ -32,9 +32,6 @@ import org.apache.lucene.util.Version;
  * two character tokenization approach which leads to larger index size, like
  * <code>org.apache.lucene.analyzer.cjk.CJKAnalyzer</code>. This analyzer's stop list
  * is merely of punctuation. It does stemming of English.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SmartChineseLuceneAnalyzer extends AbstractBookAnalyzer {
     public SmartChineseLuceneAnalyzer() {

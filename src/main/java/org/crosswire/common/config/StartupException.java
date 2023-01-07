@@ -4,9 +4,6 @@ import org.crosswire.common.util.LucidException;
 
 /**
  * Something in the startup config files failed to start properly.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class StartupException extends LucidException {
     /**

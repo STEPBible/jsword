@@ -25,9 +25,6 @@ import java.util.Map;
 /**
  * All the methods in this class highlight some are of the API and how to use
  * it.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class APIExamples {
     /**

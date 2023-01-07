@@ -4,9 +4,6 @@ import org.crosswire.jsword.internationalisation.LocaleProviderManager;
 
 /**
  * Types of Sentence Case.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum CaseType {
     LOWER  {

@@ -14,9 +14,6 @@ import org.crosswire.jsword.internationalisation.LocaleProviderManager;
 
 /**
  * BibleNames deals with locale sensitive BibleBook name lookup conversions.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class BibleNames {
     /**
@@ -181,9 +178,6 @@ public final class BibleNames {
     /**
      * NameList is the internal, internationalize list of names
      * for a locale.
-     *
-     * @see gnu.lgpl.License for license details.<br>
-     *      The copyright to this program is held by it's authors.
      */
     private class NameList {
         /**

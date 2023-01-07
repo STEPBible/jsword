@@ -37,9 +37,6 @@ import org.jdom2.Element;
  * 
  * The best place to go for more information about the GBF spec is:
  * <a href="http://ebible.org/bible/gbf.htm">http://ebible.org/bible/gbf.htm</a>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class GBFFilter implements Filter {
     /* (non-Javadoc)

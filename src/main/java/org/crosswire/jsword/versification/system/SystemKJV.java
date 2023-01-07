@@ -26,9 +26,6 @@ import org.crosswire.jsword.versification.Versification;
 /**
  * The KJV versification is the first implemented versification
  * and is the default versification for JSword/SWORD.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SystemKJV extends Versification {
     /**

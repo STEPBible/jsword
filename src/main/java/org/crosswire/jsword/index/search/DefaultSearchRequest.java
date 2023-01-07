@@ -23,9 +23,6 @@ package org.crosswire.jsword.index.search;
 
 /**
  * A default implementation of a SearchRequest.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class DefaultSearchRequest implements SearchRequest {
     /**

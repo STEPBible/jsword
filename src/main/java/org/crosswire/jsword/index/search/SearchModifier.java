@@ -5,9 +5,6 @@ import java.io.Serializable;
 /**
  * A SearchModifier consists of the kinds of changes that can be done to a
  * search.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface SearchModifier extends Serializable {
     /**

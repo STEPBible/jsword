@@ -35,9 +35,6 @@ import org.crosswire.jsword.passage.PassageTally;
  * </pre>
  * 
  * </p>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class Speed implements Runnable {
     /**

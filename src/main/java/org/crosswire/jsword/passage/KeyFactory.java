@@ -2,9 +2,6 @@ package org.crosswire.jsword.passage;
 
 /**
  * A Factory for new Keys and KeyLists.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface KeyFactory {
     /**

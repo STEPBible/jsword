@@ -10,9 +10,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 /**
  * Maintains a navigable history of objects. This maintains a dated list of
  * objects and a current navigation list.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class History {
     /**

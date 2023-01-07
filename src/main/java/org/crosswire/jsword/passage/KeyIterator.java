@@ -7,9 +7,6 @@ import java.util.Stack;
 /**
  * This KeyIterator performs a depth first iteration over the subkeys in the
  * key.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class KeyIterator implements Iterator<Key> {
     public KeyIterator(Key key) {

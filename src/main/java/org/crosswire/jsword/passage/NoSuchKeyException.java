@@ -4,9 +4,6 @@ import org.crosswire.common.util.LucidException;
 
 /**
  * When something tries to use a key that we don't understand.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class NoSuchKeyException extends LucidException {
     /**

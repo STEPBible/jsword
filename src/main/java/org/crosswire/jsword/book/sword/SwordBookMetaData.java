@@ -71,14 +71,6 @@ import java.util.Set;
  * The contents of the About field are in rtf.
  * <p>
  * \ is used as a continuation line.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
- */
-
-/**
- * @see gnu.lgpl.License for license details.<br>
- * The copyright to this program is held by it's authors.
  */
 public final class SwordBookMetaData extends AbstractBookMetaData {
     /**

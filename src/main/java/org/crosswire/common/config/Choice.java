@@ -34,9 +34,6 @@ import org.jdom2.Element;
  * <li>elect a user level for itself (Beginner, Intermediate, Advanced)</li>
  * <li>provide a GUI editor for itself</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Choice {
     /**

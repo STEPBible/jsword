@@ -35,9 +35,6 @@ import java.util.List;
  * This reads a file up front and creates the key value pairs. Because
  * we're not quite using the 'properties' file definition because we allow
  * duplicate keys on either side of the '=' sign, we need to do the processing ourselves.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class FileVersificationMapping {
     //unsure what a typical value would be, so leaving at 16 - best to optimize for memory,

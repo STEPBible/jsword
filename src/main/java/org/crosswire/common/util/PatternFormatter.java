@@ -23,9 +23,6 @@ import java.util.logging.Logger;
  * <li>{7} is the line number</li>
  * <li>{8} is the system supplied new line</li>
  * </ul>
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class PatternFormatter extends Formatter {
     /**

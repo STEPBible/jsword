@@ -41,9 +41,6 @@ import static org.junit.Assert.assertTrue;
  * Test simple functionality across multiple backends, to ensure that all types
  * of backing drivers are working correctly
  * 
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BackendTest {
     /**

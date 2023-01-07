@@ -73,9 +73,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Implement the SearchEngine using Lucene as the search engine.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class LuceneIndex extends AbstractIndex implements Closeable {
     /*

@@ -2,9 +2,6 @@ package org.crosswire.common.activate;
 
 /**
  * Enumeration of how memory is returned.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public enum Kill {
     /** Try as hard as possible to conserve memory */

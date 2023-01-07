@@ -34,9 +34,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A helper for when we need to be a choice created dynamically.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public abstract class AbstractReflectedChoice implements Choice {
     /*

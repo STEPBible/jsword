@@ -28,9 +28,6 @@ import org.xml.sax.Attributes;
 
 /**
  * THML Tag to process the subscript element.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class SubTag extends AbstractTag {
     /* (non-Javadoc)

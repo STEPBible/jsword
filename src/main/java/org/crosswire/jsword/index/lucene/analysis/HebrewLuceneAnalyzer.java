@@ -32,9 +32,6 @@ import java.io.Reader;
 
 /**
  * Analyzer that removes the accents from the Hebrew text
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class HebrewLuceneAnalyzer extends AbstractBookAnalyzer {
     public HebrewLuceneAnalyzer() {

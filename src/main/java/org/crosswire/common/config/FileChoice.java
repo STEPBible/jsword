@@ -24,9 +24,6 @@ import java.io.File;
 
 /**
  * A class to convert between files and objects of a type.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class FileChoice extends AbstractReflectedChoice {
     /*

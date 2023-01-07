@@ -29,9 +29,6 @@ import org.crosswire.jsword.passage.NoSuchKeyException;
 /**
  * BookLookup allows one to lookup via keys. Note: it does not work with
  * GenBook.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class BookLookup {
 

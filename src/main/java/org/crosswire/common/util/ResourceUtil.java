@@ -10,9 +10,6 @@ import org.crosswire.jsword.JSOtherMsg;
 /**
  * Better implementations of the getResource methods with less ambiguity and
  * that are less dependent on the specific classloader situation.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public final class ResourceUtil {
     /**

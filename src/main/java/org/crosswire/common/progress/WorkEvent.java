@@ -5,9 +5,6 @@ import java.util.EventObject;
 /**
  * A WorkEvent happens whenever a task makes some progress in doing measurable
  * work.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class WorkEvent extends EventObject {
     /**

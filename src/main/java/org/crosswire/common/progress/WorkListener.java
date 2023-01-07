@@ -5,9 +5,6 @@ import java.util.EventListener;
 /**
  * Implement WorkListener and call myClassObj.addProgressListener() to receive
  * WorkEvents when ever we make progress.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface WorkListener extends EventListener {
     /**

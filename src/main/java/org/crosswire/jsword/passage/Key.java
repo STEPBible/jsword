@@ -8,9 +8,6 @@ import java.io.Serializable;
  * The interface is modeled on the java.util.Set interface customized because
  * KeyLists can only store other Keys and simplified by making add() and
  * remove() return void and not a boolean.
- *
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public interface Key extends Comparable<Key>, Iterable<Key>, Cloneable, Serializable {
     /**

@@ -45,9 +45,6 @@ import org.xml.sax.InputSource;
 
 /**
  * Filter to convert an OSIS XML string to OSIS format.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
  */
 public class OSISFilter implements Filter {
 

@@ -34,10 +34,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A ConfigEntry holds the value(s) for an entry of ConfigEntryType.
- * 
- * @see gnu.lgpl.License for license details.<br>
- *      The copyright to this program is held by it's authors.
- * @see gnu.lgpl.License
  */
 public final class ConfigEntry {
 
