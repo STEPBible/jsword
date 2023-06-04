@@ -62,7 +62,7 @@ public class FileVersificationMapping {
         InputStream s = ResourceUtil.getResourceAsStream(getClass(), versification.getName() + ".properties");
         BufferedReader lineReader = new BufferedReader(new InputStreamReader(s));
         String line;
-        while ((line = lineReader.readLine()) != null) {
+         while ((line = lineReader.readLine()) != null) {
             if (line.length() == 0 || line.charAt(0) == '#') {
                 continue;
             }
