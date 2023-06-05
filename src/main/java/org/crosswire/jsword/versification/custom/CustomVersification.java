@@ -67,37 +67,15 @@ public class CustomVersification {
                 final File parent = new File(dirs[0]);
                 File mapFile = new File(parent, SystemCustomVersification.V11N_NAME + ".properties");
                 if (mapFile.exists()) mapFile.delete();
-
-                mapFile.createNewFile();
-                FileWriter myWriter = new FileWriter(mapFile.getPath());
-                for(int i = 0; i < v11n.jsword_mappings.length; i++)
-                {
-                    myWriter.write(v11n.jsword_mappings[i]);
-                    myWriter.write("\n");
+                if(v11n.jsword_mappings.length > 0) {
+                    mapFile.createNewFile();
+                    FileWriter myWriter = new FileWriter(mapFile.getPath());
+                    for (int i = 0; i < v11n.jsword_mappings.length; i++) {
+                        myWriter.write(v11n.jsword_mappings[i]);
+                        myWriter.write("\n");
+                    }
+                    myWriter.close();
                 }
-                /*for(int i = 0; i < v11n.jsword_mappings.length; i+=7)
-                {
-                    String bk;
-                    if(v11n.jsword_mappings[i] > v11n.otbooks.length)
-                        bk = v11n.ntbooks[v11n.jsword_mappings[i] - v11n.otbooks.length].osis;
-                    else
-                        bk = v11n.ntbooks[v11n.jsword_mappings[i]].osis;
-                    int c1 = v11n.jsword_mappings[i+1];
-                    int v1 = v11n.jsword_mappings[i+2];
-                    int v1e = v11n.jsword_mappings[i+3];
-                    int c2 = v11n.jsword_mappings[i+4];
-                    int v2 = v11n.jsword_mappings[i+5];
-                    int v2e = v11n.jsword_mappings[i+6];
-                    String map = String.format("%s.%d.%d", bk,c1,v1);
-                    if(v1e > v1)
-                        map = String.format("%s-%s.%d.%d", map,bk,c1,v1e);
-                    map = String.format("%s=%s.%d.%d", map,bk,c2,v2);
-                    if(v2e > v2)
-                        map = String.format("%s-%s.%d.%d", map,bk,c2,v2e);
-                    myWriter.write(map);
-                    myWriter.write("\n");
-                }*/
-                myWriter.close();
 
             } catch (IOException ex) {
                 log.error("Failed to process custom versification file", ex);
