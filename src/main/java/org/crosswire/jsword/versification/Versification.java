@@ -66,8 +66,10 @@ public class Versification implements ReferenceSystem, Serializable {
      *            chapter. Do not include chapter 0.
      */
     public Versification(String name, BibleBook[] booksOT, BibleBook[] booksNT, int[][] lastVerseOT, int[][] lastVerseNT) {
-        this.name = name;
-
+        initializeVersification(name, booksOT, booksNT, lastVerseOT, lastVerseNT);
+    }
+    public void initializeVersification(String name, BibleBook[] booksOT, BibleBook[] booksNT, int[][] lastVerseOT, int[][] lastVerseNT) {
+            this.name = name;
         // Copy the books into an aggregated BibleBook array
         // including INTRO_BIBLE and INTRO_OT/INTRO_NT for non-null book lists
         int bookCount = 1; // Always include the INTRO_BIBLE

@@ -39,33 +39,36 @@ public class CustomVersification {
         //convert json string to V11nTmp object
         V11nTmp v11n = objectMapper.readValue(jsonData, V11nTmp.class);
 
-        SystemCustomVersification.V11N_NAME = v11n.v11nName;
+        SystemCustomVersification scv = new SystemCustomVersification();
+
+        scv.V11N_NAME = v11n.v11nName;
 
         int vmIndex = 0;
-        SystemCustomVersification.BOOKS_OT = new BibleBook[v11n.otbooks.length - 1];
-        SystemCustomVersification.LAST_VERSE_OT = new int[v11n.otbooks.length - 1][];
+        scv.BOOKS_OT = new BibleBook[v11n.otbooks.length - 1];
+        scv.LAST_VERSE_OT = new int[v11n.otbooks.length - 1][];
         for(int i = 0; i < v11n.otbooks.length - 1; i++){
-            SystemCustomVersification.BOOKS_OT[i] = BibleBook.fromOSIS(v11n.otbooks[i].osis);
-            SystemCustomVersification.LAST_VERSE_OT[i] = new int[v11n.otbooks[i].chapmax];
-            System.arraycopy( v11n.vm, vmIndex, SystemCustomVersification.LAST_VERSE_OT[i], 0, v11n.otbooks[i].chapmax);
+            scv.BOOKS_OT[i] = BibleBook.fromOSIS(v11n.otbooks[i].osis);
+            scv.LAST_VERSE_OT[i] = new int[v11n.otbooks[i].chapmax];
+            System.arraycopy( v11n.vm, vmIndex, scv.LAST_VERSE_OT[i], 0, v11n.otbooks[i].chapmax);
             vmIndex += v11n.otbooks[i].chapmax;
         }
 
-        SystemCustomVersification.BOOKS_NT = new BibleBook[v11n.ntbooks.length - 1];
-        SystemCustomVersification.LAST_VERSE_NT = new int[v11n.ntbooks.length - 1][];
+        scv.BOOKS_NT = new BibleBook[v11n.ntbooks.length - 1];
+        scv.LAST_VERSE_NT = new int[v11n.ntbooks.length - 1][];
         for(int i = 0; i < v11n.ntbooks.length - 1; i++){
-            SystemCustomVersification.BOOKS_NT[i] = BibleBook.fromOSIS(v11n.ntbooks[i].osis);
-            SystemCustomVersification.LAST_VERSE_NT[i] = new int[v11n.ntbooks[i].chapmax];
-            System.arraycopy( v11n.vm, vmIndex, SystemCustomVersification.LAST_VERSE_NT[i], 0, v11n.ntbooks[i].chapmax);
+            scv.BOOKS_NT[i] = BibleBook.fromOSIS(v11n.ntbooks[i].osis);
+            scv.LAST_VERSE_NT[i] = new int[v11n.ntbooks[i].chapmax];
+            System.arraycopy( v11n.vm, vmIndex, scv.LAST_VERSE_NT[i], 0, v11n.ntbooks[i].chapmax);
             vmIndex += v11n.ntbooks[i].chapmax;
         }
 
-        if(!Versifications.instance().isDefined(SystemCustomVersification.V11N_NAME)) {
-            Versifications.instance().register(new SystemCustomVersification());
+        if(!Versifications.instance().isDefined(scv.V11N_NAME)) {
+            scv.uodateSuper();
+            Versifications.instance().register(scv);
             try {
                 URI[] dirs = CWProject.instance().getProjectResourceDirs();
                 final File parent = new File(dirs[0]);
-                File mapFile = new File(parent, SystemCustomVersification.V11N_NAME + ".properties");
+                File mapFile = new File(parent, scv.V11N_NAME + ".properties");
                 if (mapFile.exists()) mapFile.delete();
                 if(v11n.jsword_mappings.length > 0) {
                     mapFile.createNewFile();
