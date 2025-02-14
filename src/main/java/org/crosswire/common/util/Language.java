@@ -256,7 +256,7 @@ public class Language implements Comparable<Language> {
 
         final Language other = (Language) obj;
 
-        return code.equals(other.code)  && compareStrings(script, other.script) && compareStrings(country, other.country);
+        return code.equals(other.code);
     }
 
     /* (non-Javadoc)
