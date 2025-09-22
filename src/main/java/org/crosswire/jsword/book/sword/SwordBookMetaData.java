@@ -214,17 +214,6 @@ public final class SwordBookMetaData extends AbstractBookMetaData {
         return name;
     }
 
-    public String getScopeInConfig() {
-        Object scopeInConfig;
-        if (this.parent != null)
-            scopeInConfig = this.parent.getProperty("Scope");
-        else
-            scopeInConfig = this.getProperty("Scope");
-        if (scopeInConfig == null)
-            return "";
-        return scopeInConfig.toString();
-    }
-
     /**
      * Only supported for books, returns the key representing all entries in the book, as defined by the
      * 'Scope' parameter.

@@ -269,7 +269,6 @@ public interface BookMetaData extends Comparable<BookMetaData> {
      * @return the current scope of the book.
      */
     VerseKey getScope();
-    String getScopeInConfig();
 
     /**
      * Saves an entry to a particular configuration file.
