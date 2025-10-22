@@ -80,7 +80,7 @@ public final class SwordUtil {
         long rafSize = raf.length();
 
         if (offset >= rafSize) {
-            log.error("Attempt to read beyond end. offset={} size={} but raf.length={}", Long.toString(offset), Integer.toString(size), Long.toString(rafSize));
+//            log.info("Attempt to read beyond end. offset={} size={} but raf.length={}", Long.toString(offset), Integer.toString(size), Long.toString(rafSize));
             return new byte[0];
         }
 
