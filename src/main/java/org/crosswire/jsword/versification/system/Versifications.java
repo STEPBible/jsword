@@ -149,6 +149,20 @@ public final class Versifications {
         if (SystemVulg.V11N_NAME.equals(name)) {
             return new SystemVulg();
         }
+
+        if (SystemCalvin.V11N_NAME.equals(name)) {
+            return new SystemCalvin();
+        }
+        if (SystemOrthodox.V11N_NAME.equals(name)) {
+            return new SystemOrthodox();
+        }
+        if (SystemDarbyFR.V11N_NAME.equals(name)) {
+            return new SystemDarbyFR();
+        }
+        if (SystemSegond.V11N_NAME.equals(name)) {
+            return new SystemSegond();
+        }
+
         if (SystemKJVAPlus.V11N_NAME.equals(name)) {
             return new SystemKJVAPlus();
         }
@@ -208,6 +222,10 @@ public final class Versifications {
         known.add(SystemSynodal.V11N_NAME);
         known.add(SystemSynodalProt.V11N_NAME);
         known.add(SystemVulg.V11N_NAME);
+        known.add(SystemCalvin.V11N_NAME);
+        known.add(SystemDarbyFR.V11N_NAME);
+        known.add(SystemSegond.V11N_NAME);
+        known.add(SystemOrthodox.V11N_NAME);
         known.add(SystemKJVAPlus.V11N_NAME);
         fluffed = new HashMap<String, Versification>();
     }

@@ -208,6 +208,7 @@ public class DefaultBookMetaData extends AbstractBookMetaData {
         throw new NotImplementedException();
     }
 
+
     private void addRow(Element table, String key, String value) {
         if (value == null) {
             return;
