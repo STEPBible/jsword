@@ -26,6 +26,13 @@ public class ZVerseBackendDStrong {
         if ((!bmd.hasFeature(FeatureType.STRONGS_NUMBERS)) || // No Strong in the selected Bible or
             (verse.getBook().ordinal() >= 69))                // It is Deutro canon
             return resultFromJSword;                          // Do not need to augment DStrong
+        String translation = bmd.getInitials();
+        if (translation.equals("NIV_tagged")) {
+            if (testament.name().equals("OLD"))
+                return resultFromJSword;
+            else
+                return resultFromJSword.replaceAll("(G\\d\\d\\d\\d)_[ABCDEFGHI]","$1");
+        }
         String versificationName = v11n.getName();
         int index = ordinalInTestament;
         if ((!versificationName.equals("NRSV")) && (!versificationName.equals("MT"))) {
@@ -50,7 +57,6 @@ public class ZVerseBackendDStrong {
         }
 
         int[] ordinals;
-        String translation = bmd.getInitials();
         boolean isGreek = true;
         if (testament == Testament.OLD) {
             if (translation.equals("abpen_sb")  || translation.equals("LXX_th")  || translation.equals("abpgk_sb") ) {
@@ -66,7 +72,7 @@ public class ZVerseBackendDStrong {
         }
         else
             ordinals = OpenFileStateManager.osArray.ordinalNT;
-        byte[] augmentStrongs = getAugStrongsForVerse(ordinals, index, isGreek);
+        byte[] augmentStrongs = getAugStrongsForVerse(ordinals, index, isGreek); // NIV_tagged's NT is already augmented so don't augmented agian.
         String augmentedText = augmentDStrongInVerse(resultFromJSword, augmentStrongs, testament, isGreek);
         if (bmd.getIndexStatus() == IndexStatus.CREATING)
             createStepCacheForAugStrong(v11n, testament, ordinalInTestament, rafBook, bmd, augmentedText);

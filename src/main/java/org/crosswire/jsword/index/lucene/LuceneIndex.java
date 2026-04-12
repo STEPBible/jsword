@@ -494,7 +494,9 @@ public class LuceneIndex extends AbstractIndex implements Closeable {
             }
 
             if (includeStrongs) {
-                addField(doc, strongField, OSISUtil.getStrongsNumbers(osis));
+                if (!(book.getInitials().equals("NIV_tagged") &&
+                        (((Verse) subkey).getOrdinal() < 24115 ))) // Skip NIV_tagged OT because Strong tagging is only in NT
+                    addField(doc, strongField, OSISUtil.getStrongsNumbers(osis));
             }
 
             if (includeXrefs) {
