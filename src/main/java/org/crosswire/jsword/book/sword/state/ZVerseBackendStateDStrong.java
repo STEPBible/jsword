@@ -40,7 +40,13 @@ public class ZVerseBackendStateDStrong {
             FileInputStream fileIn = new FileInputStream(curPath + testament.name() + "augmentedIndex.ser");
             ObjectInputStream objIn = new ObjectInputStream(fileIn);
             // Reads the objects
-            stepCache.stepAugmentedIndex = (stepAugmentedIndex) objIn.readObject();
+            int numOfVerses = objIn.readInt();
+            stepCache.stepAugmentedIndex = new stepAugmentedIndex();
+            stepCache.stepAugmentedIndex.baseIndexDivideBy = 1;
+            stepCache.stepAugmentedIndex.baseIndex = new int[numOfVerses];
+            for (int i = 0; i < numOfVerses; i++) {
+                stepCache.stepAugmentedIndex.baseIndex[i] = objIn.readInt();
+            }
             RandomAccessFile file = new RandomAccessFile(augmentedText, "r");
             FileChannel channel = file.getChannel();
             // Read file into mapped buffer
@@ -221,7 +227,11 @@ public class ZVerseBackendStateDStrong {
                 fileOutputStream = new FileOutputStream(augmentedIndexFilePath);
                 ObjectOutputStream out;
                 out = new ObjectOutputStream(fileOutputStream);
-                out.writeObject(stepIndex);
+                out.writeInt(stepIndex.baseIndex.length);
+                for (int num : stepIndex.baseIndex) {
+                    out.writeInt(num); // Writes the raw 4-byte integer
+                }
+//                out.writeObject(stepIndex);
                 out.flush();
                 out.close();
                 stepCache.posInAugFile = stepCacheReady4Use;
@@ -236,108 +246,110 @@ public class ZVerseBackendStateDStrong {
     }
 
     private static stepAugmentedIndex compactIndex (stepAugmentedBibleTextCache stepCache ) {
+        stepCache.stepAugmentedIndex.baseIndexDivideBy = 1;
+        return stepCache.stepAugmentedIndex; // Cannot compact the index, return original.
         // baseIndex is an array of int
         // index2Text is an array of short.  There is an element in this array for each ordinal (verse).
         // The sum of the two will give the position in the cached Bible text file for an ordinal
         //
-        int max4 = 0;
-        int last4 = stepCache.stepAugmentedIndex.baseIndex[1];
-        int max8 = 0;
-        int last8 = stepCache.stepAugmentedIndex.baseIndex[1];
-        int max16 = 0;
-        int last16 = stepCache.stepAugmentedIndex.baseIndex[1];
-        int max32 = 0;
-        int last32 = stepCache.stepAugmentedIndex.baseIndex[1];
-        for (int i = 0; i < stepCache.stepAugmentedIndex.baseIndex.length; i++) {
-            if ((i % 4 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
-                int currentPos = stepCache.stepAugmentedIndex.baseIndex[i];
-                if (currentPos == 0) {
-                    for (int j = i + 1; j < stepCache.stepAugmentedIndex.baseIndex.length - 1; j++) {
-                        if (stepCache.stepAugmentedIndex.baseIndex[j] != 0) {
-                            currentPos = stepCache.stepAugmentedIndex.baseIndex[j];
-                            break;
-                        }
-                    }
-                }
-                if (max4 < (currentPos - last4))
-                    max4 = currentPos - last4;
-                last4 = currentPos;
-                if ((i % 8 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
-                    if (max8 < (currentPos - last8))
-                        max8 = currentPos - last8;
-                    last8 = currentPos;
-                    if ((i % 16 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
-                        if (max16 < (currentPos - last16)) {
-                            max16 = currentPos - last16;
-                        }
-                        last16 = currentPos;
-                        if ((i % 32 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
-                            if (max32 < (currentPos - last32))
-                                max32 = currentPos - last32;
-                            last32 = currentPos;
-                        }
-                    }
-                }
-            }
-        }
-        stepAugmentedIndex newStepIndex = new stepAugmentedIndex();
-        newStepIndex.baseIndexDivideBy = 1;
-        if (max32 < 65555) newStepIndex.baseIndexDivideBy = 32; // reduce size by 46% would be from 128K to 68K for a Bible with OT and NT
-        else if (max16 < 65535) newStepIndex.baseIndexDivideBy = 16; // reduce size by 43%
-        else if (max8 < 65535) newStepIndex.baseIndexDivideBy = 8; // reduce size by 37%
-        else if (max4 < 65535) newStepIndex.baseIndexDivideBy = 4; // reduce size by 25%
-        else {
-            stepCache.stepAugmentedIndex.baseIndexDivideBy = 1;
-            return stepCache.stepAugmentedIndex; // Cannot compact the index, return original.
-        }
-        newStepIndex.baseIndex = new int[(stepCache.stepAugmentedIndex.baseIndex.length / newStepIndex.baseIndexDivideBy) + 2];
-        newStepIndex.index2Text = new byte[(stepCache.stepAugmentedIndex.baseIndex.length+1) * 2];
-        for (int i = 0; i < stepCache.stepAugmentedIndex.baseIndex.length; i++) {
-            int j = i / newStepIndex.baseIndexDivideBy;
-            if (i % newStepIndex.baseIndexDivideBy == 0) {
-                int currentPos = stepCache.stepAugmentedIndex.baseIndex[i];
-                if (currentPos == 0) {
-                    for (int k  = i + 1; k < stepCache.stepAugmentedIndex.baseIndex.length - 1; k++) {
-                        if (stepCache.stepAugmentedIndex.baseIndex[k] != 0) {
-                            currentPos = stepCache.stepAugmentedIndex.baseIndex[k];
-                            newStepIndex.index2Text[i * 2] = (byte) 0xff;
-                            newStepIndex.index2Text[i * 2 + 1] = (byte) 0xff;;
-                            break;
-                        }
-                    }
-                }
-                else {
-                    newStepIndex.index2Text[i*2] = 0;
-                    newStepIndex.index2Text[i*2+1] = 0;
-                }
-                newStepIndex.baseIndex[j] = currentPos;
-            }
-            else {
-                int currentPos = stepCache.stepAugmentedIndex.baseIndex[i];
-                int diff;
-                if (currentPos == 0) {
-                    diff = 65535; // 65535 is FFFF in hex for an int, it means it is zero
-                }
-                else {
-                    diff = currentPos - newStepIndex.baseIndex[j];
-                }
-                int pos = i * 2;
-                newStepIndex.index2Text[pos] = (byte)(diff & 0xff);
-                newStepIndex.index2Text[pos+1] = (byte)((diff >> 8) & 0xff);
-            }
-        }
-        // Verify the compact index.  Don't need to run this at run time.
-        for (int i = 0; i < stepCache.stepAugmentedIndex.baseIndex.length; i++) {
-            int pos = i * 2;
-            if ((newStepIndex.index2Text[pos] == (byte) 0xff) && (newStepIndex.index2Text[pos+1] == (byte) 0xff)) {
-                if (stepCache.stepAugmentedIndex.baseIndex[i] != 0)
-                    System.out.println("did not find zero");
-            }
-            if (stepCache.stepAugmentedIndex.baseIndex[i] != getPosOfOrdinal(i, newStepIndex))
-                System.out.println("did not match");
-        }
-        stepCache.stepAugmentedIndex = newStepIndex;
-        return newStepIndex;
+//        int max4 = 0;
+//        int last4 = stepCache.stepAugmentedIndex.baseIndex[1];
+//        int max8 = 0;
+//        int last8 = stepCache.stepAugmentedIndex.baseIndex[1];
+//        int max16 = 0;
+//        int last16 = stepCache.stepAugmentedIndex.baseIndex[1];
+//        int max32 = 0;
+//        int last32 = stepCache.stepAugmentedIndex.baseIndex[1];
+//        for (int i = 0; i < stepCache.stepAugmentedIndex.baseIndex.length; i++) {
+//            if ((i % 4 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
+//                int currentPos = stepCache.stepAugmentedIndex.baseIndex[i];
+//                if (currentPos == 0) {
+//                    for (int j = i + 1; j < stepCache.stepAugmentedIndex.baseIndex.length - 1; j++) {
+//                        if (stepCache.stepAugmentedIndex.baseIndex[j] != 0) {
+//                            currentPos = stepCache.stepAugmentedIndex.baseIndex[j];
+//                            break;
+//                        }
+//                    }
+//                }
+//                if (max4 < (currentPos - last4))
+//                    max4 = currentPos - last4;
+//                last4 = currentPos;
+//                if ((i % 8 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
+//                    if (max8 < (currentPos - last8))
+//                        max8 = currentPos - last8;
+//                    last8 = currentPos;
+//                    if ((i % 16 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
+//                        if (max16 < (currentPos - last16)) {
+//                            max16 = currentPos - last16;
+//                        }
+//                        last16 = currentPos;
+//                        if ((i % 32 == 0) || (i == stepCache.stepAugmentedIndex.baseIndex.length - 1)) {
+//                            if (max32 < (currentPos - last32))
+//                                max32 = currentPos - last32;
+//                            last32 = currentPos;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        stepAugmentedIndex newStepIndex = new stepAugmentedIndex();
+//        newStepIndex.baseIndexDivideBy = 1;
+//        if (max32 < 65555) newStepIndex.baseIndexDivideBy = 32; // reduce size by 46% would be from 128K to 68K for a Bible with OT and NT
+//        else if (max16 < 65535) newStepIndex.baseIndexDivideBy = 16; // reduce size by 43%
+//        else if (max8 < 65535) newStepIndex.baseIndexDivideBy = 8; // reduce size by 37%
+//        else if (max4 < 65535) newStepIndex.baseIndexDivideBy = 4; // reduce size by 25%
+//        else {
+//            stepCache.stepAugmentedIndex.baseIndexDivideBy = 1;
+//            return stepCache.stepAugmentedIndex; // Cannot compact the index, return original.
+//        }
+//        newStepIndex.baseIndex = new int[(stepCache.stepAugmentedIndex.baseIndex.length / newStepIndex.baseIndexDivideBy) + 2];
+//        newStepIndex.index2Text = new byte[(stepCache.stepAugmentedIndex.baseIndex.length+1) * 2];
+//        for (int i = 0; i < stepCache.stepAugmentedIndex.baseIndex.length; i++) {
+//            int j = i / newStepIndex.baseIndexDivideBy;
+//            if (i % newStepIndex.baseIndexDivideBy == 0) {
+//                int currentPos = stepCache.stepAugmentedIndex.baseIndex[i];
+//                if (currentPos == 0) {
+//                    for (int k  = i + 1; k < stepCache.stepAugmentedIndex.baseIndex.length - 1; k++) {
+//                        if (stepCache.stepAugmentedIndex.baseIndex[k] != 0) {
+//                            currentPos = stepCache.stepAugmentedIndex.baseIndex[k];
+//                            newStepIndex.index2Text[i * 2] = (byte) 0xff;
+//                            newStepIndex.index2Text[i * 2 + 1] = (byte) 0xff;;
+//                            break;
+//                        }
+//                    }
+//                }
+//                else {
+//                    newStepIndex.index2Text[i*2] = 0;
+//                    newStepIndex.index2Text[i*2+1] = 0;
+//                }
+//                newStepIndex.baseIndex[j] = currentPos;
+//            }
+//            else {
+//                int currentPos = stepCache.stepAugmentedIndex.baseIndex[i];
+//                int diff;
+//                if (currentPos == 0) {
+//                    diff = 65535; // 65535 is FFFF in hex for an int, it means it is zero
+//                }
+//                else {
+//                    diff = currentPos - newStepIndex.baseIndex[j];
+//                }
+//                int pos = i * 2;
+//                newStepIndex.index2Text[pos] = (byte)(diff & 0xff);
+//                newStepIndex.index2Text[pos+1] = (byte)((diff >> 8) & 0xff);
+//            }
+//        }
+//        // Verify the compact index.  Don't need to run this at run time.
+//        for (int i = 0; i < stepCache.stepAugmentedIndex.baseIndex.length; i++) {
+//            int pos = i * 2;
+//            if ((newStepIndex.index2Text[pos] == (byte) 0xff) && (newStepIndex.index2Text[pos+1] == (byte) 0xff)) {
+//                if (stepCache.stepAugmentedIndex.baseIndex[i] != 0)
+//                    System.out.println("did not find zero");
+//            }
+//            if (stepCache.stepAugmentedIndex.baseIndex[i] != getPosOfOrdinal(i, newStepIndex))
+//                System.out.println("did not match");
+//        }
+//        stepCache.stepAugmentedIndex = newStepIndex;
+//        return newStepIndex;
     }
     /**
      * The log stream
@@ -349,6 +361,7 @@ public class ZVerseBackendStateDStrong {
         stepAugmentedIndex stepAugmentedIndex;
         MappedByteBuffer augmentedFileMBB;
         FileChannel augFileChannel;
+        byte[] fileBuffer;
     }
 
     public static class stepAugmentedIndex implements java.io.Serializable {

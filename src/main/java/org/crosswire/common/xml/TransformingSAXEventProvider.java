@@ -20,9 +20,12 @@
  */
 package org.crosswire.common.xml;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -94,18 +97,30 @@ public class TransformingSAXEventProvider extends Transformer implements SAXEven
 
             InputStream xslStream = null;
             try {
-                xslStream = NetUtil.getInputStream(xsluri);
+                String path = xsluri.getPath();
+                boolean hasWasmFolder = Files.isDirectory(Paths.get("/opt/step/homes/xsl"));
+                if (hasWasmFolder) {
+                    if (path.endsWith(".xsl")) {
+                        int lastSlashIndex = path.lastIndexOf('/');
+                        path = "/opt/step/homes/xsl/" + path.substring(lastSlashIndex + 1);
+                    }
+                    xslStream = new FileInputStream(path);
+                }
+                else
+                    xslStream = NetUtil.getInputStream(xsluri);
                 if (transfact == null) {
                     transfact = TransformerFactory.newInstance();
                 }
+                System.out.println("getTemplateInfo 1");
                 Templates templates = transfact.newTemplates(new StreamSource(xslStream));
-
+                System.out.println("getTemplateInfo 2");
                 if (modtime == -1) {
-                    modtime = NetUtil.getLastModified(xsluri);
+                    if (hasWasmFolder)
+                        modtime = Files.getLastModifiedTime(Paths.get(path)).toMillis();
+                    else
+                        modtime = NetUtil.getLastModified(xsluri);
                 }
-
                 tinfo = new TemplateInfo(templates, modtime);
-
                 txers.put(xsluri, tinfo);
             } finally {
                 IOUtil.close(xslStream);
@@ -125,34 +140,38 @@ public class TransformingSAXEventProvider extends Transformer implements SAXEven
     @Override
     public void transform(Source xmlSource, Result outputTarget) throws TransformerException {
         TemplateInfo tinfo;
+        System.out.println("transform 1");
         try {
             tinfo = getTemplateInfo();
         } catch (IOException e) {
             throw new TransformerException(e);
         }
-
-        Transformer transformer = tinfo.getTemplates().newTransformer();
-
+        System.out.println("transform 2");
+        Templates curTemplate = tinfo.getTemplates();
+        System.out.println("transform 3: " + curTemplate);
+        Transformer transformer = curTemplate.newTransformer();
+        System.out.println("transform 4");
         for (Object obj : outputs.keySet()) {
             String key = (String) obj;
             String val = getOutputProperty(key);
             transformer.setOutputProperty(key, val);
         }
-
+        System.out.println("transform 5");
         for (String key : params.keySet()) {
             Object val = params.get(key);
             transformer.setParameter(key, val);
         }
-
+        System.out.println("transform 6");
         if (errors != null) {
             transformer.setErrorListener(errors);
         }
-
+        System.out.println("transform 7");
         if (resolver != null) {
             transformer.setURIResolver(resolver);
         }
-
+        System.out.println("transform 8");
         transformer.transform(xmlSource, outputTarget);
+        System.out.println("transform 9");
     }
 
     /*
@@ -165,10 +184,10 @@ public class TransformingSAXEventProvider extends Transformer implements SAXEven
     public void provideSAXEvents(ContentHandler handler) throws SAXException {
         try {
             Source xmlSource = new SAXSource(new SAXEventProviderXMLReader(xmlsep), new SAXEventProviderInputSource());
-
             SAXResult outputTarget = new SAXResult(handler);
-
+            System.out.println("provideSAXEvents 1");
             transform(xmlSource, outputTarget);
+            System.out.println("provideSAXEvents 2");
         } catch (TransformerException ex) {
             throw new SAXException(ex);
         }
