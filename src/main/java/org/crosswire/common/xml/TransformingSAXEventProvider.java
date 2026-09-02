@@ -112,7 +112,11 @@ public class TransformingSAXEventProvider extends Transformer implements SAXEven
                     transfact = TransformerFactory.newInstance();
                 }
                 System.out.println("getTemplateInfo 1");
-                Templates templates = transfact.newTemplates(new StreamSource(xslStream));
+                // Resolve an issue in WASM.
+                StreamSource source = new StreamSource(xslStream);
+                String file = new File(path).toURI().toString();
+                source.setSystemId(file);
+                Templates templates = transfact.newTemplates(source);
                 System.out.println("getTemplateInfo 2");
                 if (modtime == -1) {
                     if (hasWasmFolder)
