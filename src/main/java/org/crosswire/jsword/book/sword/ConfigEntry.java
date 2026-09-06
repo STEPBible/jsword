@@ -21,7 +21,9 @@
 package org.crosswire.jsword.book.sword;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 import org.crosswire.common.util.Histogram;
@@ -32,6 +34,7 @@ import org.crosswire.jsword.versification.system.Versifications;
 import org.jdom2.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.jasypt.util.text.BasicTextEncryptor;
 
 /**
  * A ConfigEntry holds the value(s) for an entry of ConfigEntryType.
@@ -42,7 +45,8 @@ import org.slf4j.LoggerFactory;
  * @author DM Smith [ dmsmith555 at yahoo dot com]
  */
 public final class ConfigEntry {
-
+    private BasicTextEncryptor encryptor = null;
+    private final Map<String, String> decryptions = new HashMap<>();
     /**
      * Create a ConfigEntry whose type is not certain and whose value is not
      * known.
@@ -172,7 +176,33 @@ public final class ConfigEntry {
      */
     public Object getValue() {
         if (value != null) {
-            if(configValueInterceptor != null) {
+            if(configValueInterceptor == null) {
+                if (type.getName().equals("CipherKey") && (internal.equals("NIV") || internal.equals("nasb2020"))) {
+                    try {
+                        String decryptedResult = decryptions.get(value);
+                        if (decryptedResult != null) {
+                            return decryptedResult;
+                        }
+                        if (this.encryptor == null) {
+                            final BasicTextEncryptor encryptor = new BasicTextEncryptor();
+                            // Include the key in the code.
+                            final String sysKey = "p0#8j..8jm@72k}28$0-,j[$lkoiqa#]";
+                            encryptor.setPassword(sysKey);
+                            this.encryptor = encryptor;
+                        }
+                        final String valueAsString = (String) value;
+                        final String decrypt = this.encryptor.decrypt(valueAsString);
+                        System.out.println("decrypt key for " + internal + " " + decrypt);
+                        synchronized (this) {
+                            decryptions.put(valueAsString, decrypt);
+                        }
+                        return decrypt;
+                    } catch (Exception ex) { //unable to decrypt
+                        System.out.println(ex.getMessage());
+                    }
+                }
+            }
+            else {
                 return configValueInterceptor.intercept(internal, this.type, value);
             }
             return value;
