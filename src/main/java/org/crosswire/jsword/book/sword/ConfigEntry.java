@@ -177,7 +177,7 @@ public final class ConfigEntry {
     public Object getValue() {
         if (value != null) {
             if(configValueInterceptor == null) {
-                if (type.getName().equals("CipherKey") && (internal.equals("NIV") || internal.equals("nasb2020"))) {
+                if (type.getName().equals("CipherKey") && (value.toString().length() > 39)) { // lots of keys are about 108 bytes.
                     try {
                         String decryptedResult = decryptions.get(value);
                         if (decryptedResult != null) {
@@ -192,7 +192,7 @@ public final class ConfigEntry {
                         }
                         final String valueAsString = (String) value;
                         final String decrypt = this.encryptor.decrypt(valueAsString);
-                        System.out.println("decrypt key for " + internal + " " + decrypt);
+                        System.out.println("*** decrypt key for " + internal + " " + decrypt + " !!! REMOVE this line before giving this to the users");
                         synchronized (this) {
                             decryptions.put(valueAsString, decrypt);
                         }
