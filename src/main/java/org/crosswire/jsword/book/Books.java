@@ -179,6 +179,13 @@ public final class Books extends AbstractBookList {
                 final File parent = new File(stepFolder);
                 versificationFolder = new File(parent, SwordConstants.DIR_VERSIFICATION);
             }
+            if (versificationFolder == null) { // If it is cheerPj, the folder need to be updated.
+                String vmName = System.getProperty("java.vm.name");
+                if ((vmName != null) && (vmName.toLowerCase().contains("cheerpj"))) {
+                    versificationFolder = new File("/files/step/homes/jsword/step/versification");
+                    System.out.println("Since JVM is cheerpj, versification folder is changed to: "+versificationFolder);
+                }
+            }
 
             if (versificationFolder != null && versificationFolder.exists()) {
                 FilenameFilter filter = new FilenameFilter() {

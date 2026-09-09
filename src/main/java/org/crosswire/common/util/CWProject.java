@@ -108,6 +108,13 @@ public final class CWProject {
      */
     public URI getWriteableFrontendProjectDir() {
         establishProjectHome();
+        if (this.writeableFrontEndHome == null) {
+            String vmName = System.getProperty("java.vm.name");
+            if ((vmName != null) && (vmName.toLowerCase().contains("cheerpj"))) {
+                this.writeableFrontEndHome = URI.create("file:/files/step/homes/jsword/step");
+                System.out.println("Since JVM is cheerpj, writeableFrontEndHome is changed to: /files/step/homes/jsword/step");
+            }
+        }
         return this.writeableFrontEndHome;
     }
 
